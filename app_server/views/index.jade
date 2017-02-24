@@ -30,20 +30,22 @@ html(lang='en')
             span.sr-only Toggle navigation
             |  Menu 
             i.fa.fa-bars
-          a.navbar-brand(href='#page-top') Start Bootstrap
+          a.navbar-brand(href='#page-top') Overbooked
         // Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
             li.hidden
               a(href='#page-top')
             li.page-scroll
-              a(href='#portfolio') Portfolio
+              a(href='#games') Games
             li.page-scroll
               a(href='#about') About
             li.page-scroll
               a(href='#contact') Contact
-            li.page-scroll
-              a(href='/MAKEstudios/app_server/views/indexBACKUP.jade') Login
+            li.resource
+              a(href='/resources') Resources
+            li.login
+              a(href= "/login") Log In
         // /.navbar-collapse
       // /.container-fluid
     // Header
@@ -53,11 +55,11 @@ html(lang='en')
           .col-lg-12
             img.img-responsive(src='images/book.png', width = 600, height = 600, alt='')
             .intro-text
-              span.name Make Studios
+              span.name Overbooked
               hr.star-light
-              span.skills Learn to read and have fun!
+              span.skills Web Developer - Graphic Artist - User Experience Designer
     // Portfolio Grid Section
-    section#portfolio
+    section#games
       .container
         .row
           .col-lg-12.text-center
