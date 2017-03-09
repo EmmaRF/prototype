@@ -6,5 +6,6 @@ var ctrlMain = require('../controllers/main');
 router.get('/', ctrlMain.index);
 router.get('/login', ctrlMain.login);
 router.get('/resources', ctrlMain.resource);
+router.get('/sidebar', ctrlMain.sidebar);
 
 module.exports = router;
