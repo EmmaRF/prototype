@@ -1,7 +1,3 @@
-// (function($) {  //note these were not part of the original template
-  //  "use strict"; // Start of use strict  //note these were not part of the original template
-
-    
 $('.form').find('input, textarea').on('keyup blur focus', function (e) {
   
   var $this = $(this),
@@ -45,4 +41,3 @@ $('.tab a').on('click', function (e) {
   $(target).fadeIn(600);
   
 });
-//})(jQuery); //note these were not part of the original template

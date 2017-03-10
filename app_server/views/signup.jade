@@ -1,0 +1,69 @@
+extends layout
+
+block content
+
+  head
+  
+    title Sign Up!
+  
+  body
+    // Navigation
+    
+    nav#mainNav.navbar.navbar-default.navbar-fixed-top.navbar-custom
+      .container
+        // Brand and toggle get grouped for better mobile display
+        // .navbar-header.page-scroll
+        
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            |  Menu 
+            i.fa.fa-bars
+          a.navbar-brand(href='/') Overbooked
+        // Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li.hidden
+              a(href='/')
+            li.page-scroll
+              a(href='/#games') Games
+            li.page-scroll
+              a(href='/#about') About
+            li.page-scroll
+              a(href='/#contact') Contact
+            li.resources
+              a(href='/resources') Resources
+            li.login
+              a(href= "/login") Login
+
+    section#portfolio
+      .container
+       .row
+         .col-lg-12.text-center
+            p
+            h1 Sign Up
+            hr.star-primary
+          .col-lg-8.col-lg-offset-2
+            // To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.
+            // The form should work on most web servers, but if the form is not working you may need to configure your web server differently.
+            
+            form#contactForm(name='sentMessage', novalidate='')
+              .row.control-group
+                .form-group.col-xs-12.floating-label-form-group.controls
+                  label Name
+                  input#name.form-control(type='text', placeholder='Name', required='', data-validation-required-message='Please enter your name.')
+                  p.help-block.text-danger
+              .row.control-group
+                .form-group.col-xs-12.floating-label-form-group.controls
+                  label Email Address
+                  input#email.form-control(type='email', placeholder='Email Address', required='', data-validation-required-message='Please enter your email address.')
+                  p.help-block.text-danger
+              .row.control-group
+                .form-group.col-xs-12.floating-label-form-group.controls
+                  label Password
+                  input#phone.form-control(type='tel', placeholder='Set a Password', required='', data-validation-required-message='Please enter a password.')
+                  p.help-block.text-danger
+              br
+              #success
+              .row
+                .form-group.col-xs-12
+                  button.btn.btn-success.btn-lg(type='submit') Join Us!
