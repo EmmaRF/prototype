@@ -14,3 +14,7 @@ module.exports.resources = function(req, res, next) {
 module.exports.signup = function(req, res, next) {
   res.render('signup', { title: 'Sign Up' });
 };
+
+module.exports.sidebar = function(req, res, next) {
+  res.render('sidebar', { title: 'Sidebars' });
+};

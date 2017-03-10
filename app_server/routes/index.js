@@ -7,5 +7,6 @@ router.get('/', ctrlMain.index);
 router.get('/login', ctrlMain.login);
 router.get('/resources', ctrlMain.resources);
 router.get('/signup', ctrlMain.signup);
+router.get('/sidebar', ctrlMain.sidebar);
 
 module.exports = router;
