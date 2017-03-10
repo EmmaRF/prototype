@@ -1,28 +1,12 @@
-doctype html
-html(lang='en')
+extends layout
+
+block content
+
   head
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    meta(name='description', content='')
-    meta(name='author', content='')
+    
     title Overbooked
-    // Bootstrap Core CSS
-    link(href='vendor/bootstrap/css/bootstrap.min.css', rel='stylesheet')
-    // Theme CSS
-    link(href='css/freelancer.min.css', rel='stylesheet')
-    // Custom Fonts
-    link(href='vendor/font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
-    link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
-    link(href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', rel='stylesheet', type='text/css')
-    //Favicon
-    link(rel='shortcut icon', type='image/png', href='images/yellow puzzle piece.png')
-    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
-    // WARNING: Respond.js doesn't work if you view the page via file://
-    //if lt IE 9
-      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
-      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
-  body#page-top.index
+      
+  body
     // Navigation
     nav#mainNav.navbar.navbar-default.navbar-fixed-top.navbar-custom
       .container
@@ -32,12 +16,12 @@ html(lang='en')
             span.sr-only Toggle navigation
             |  Menu 
             i.fa.fa-bars
-          a.navbar-brand(href='/#page-top') Overbooked
+          a.navbar-brand(href='/') Overbooked
         // Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
             li.hidden
-              a(href='/#page-top')
+              a(href='/')
             li.page-scroll
               a(href='/#games') Games
             li.page-scroll
@@ -47,51 +31,55 @@ html(lang='en')
             li.resource
               a(href='/resources') Resources
             li.login
-              a(href= "/login") Log In
-        // /.navbar-collapse
-      // /.container-fluid
-    // Portfolio Grid Section
-    section#portfolio
+              a(href= "/signup") Sign Up
+      
+    header
       .container
         .row
-        .row
-          .col-lg-12.text-center
-            h2 Resources
-            hr.star-primary
-        .row
+          .col-lg-12
+            .intro-text
+              span.name Resources
+              hr.star-light
+              p
           .col-sm-4.portfolio-item
             a.portfolio-link(href='http://pbskids.org/games/reading/')
-              .caption
-                .caption-content
-                  i.fa.fa-search-plus.fa-3x
-              img.img-responsive(src='img/otherSites/pbs-kids-logo.svg', alt='')
+              // .caption
+              //   .caption-content
+              //     i.fa.fa-search-plus.fa-3x    ANNOYING SEARCH ICON
+              
+              img.img-responsive(src='images/otherSites/pbs-kids-logo.svg', alt='')
           .col-sm-4.portfolio-item
             a.portfolio-link(href='http://www.abcya.com/')
-              .caption
-                .caption-content
-                  i.fa.fa-search-plus.fa-3x
-              img.img-responsive(src='img/otherSites/ABCya.png', alt='')
+              // .caption
+              //   .caption-content
+              //     i.fa.fa-search-plus.fa-3x    ANNOYING SEARCH ICON
+              
+              img.img-responsive(src='images/otherSites/ABCya.png', alt='')
           .col-sm-4.portfolio-item
             a.portfolio-link(href='http://www.seussville.com/')
-              .caption
-                .caption-content
-                  i.fa.fa-search-plus.fa-3x
-              img.img-responsive(src='/img/otherSites/Suess.png', alt='')
+              // .caption
+              //   .caption-content
+              //     i.fa.fa-search-plus.fa-3x    ANNOYING SEARCH ICON
+              
+              img.img-responsive(src='/images/otherSites/Suess.png', alt='')
           .col-sm-4.portfolio-item
             a.portfolio-link(href='http://www.wordcentral.com/games.html')
-              .caption
-                .caption-content
-                  i.fa.fa-search-plus.fa-3x
-              img.img-responsive(src='img/otherSites/MWwordcentral.png', alt='')
+              // .caption
+              //   .caption-content
+              //     i.fa.fa-search-plus.fa-3x    ANNOYING SEARCH ICON
+              
+              img.img-responsive(src='images/otherSites/MWwordcentral.png', alt='')
           .col-sm-4.portfolio-item
             a.portfolio-link(href='https://www.funbrain.com/brain/ReadingBrain/ReadingBrain.html', data-toggle='modal')
-              .caption
-                .caption-content
-                  i.fa.fa-search-plus.fa-3x
-              img.img-responsive(src='img/otherSites/funbrain.png', alt='')
+              // .caption
+              //   .caption-content
+              //     i.fa.fa-search-plus.fa-3x    ANNOYING SEARCH ICON
+              
+              img.img-responsive(src='images/otherSites/funbrain.png', alt='')
           .col-sm-4.portfolio-item
             a.portfolio-link(href='http://www.nwf.org/Kids/Games/Word-Finds/Giraffe-Word-Find.aspx', data-toggle='modal')
-              .caption
-                .caption-content
-                  i.fa.fa-search-plus.fa-3x
-              img.img-responsive(src='img/otherSites/NWF+.png', alt='')
+              // .caption
+              //   .caption-content
+              //     i.fa.fa-search-plus.fa-3x    ANNOYING SEARCH ICON
+              
+              img.img-responsive(src='images/otherSites/NWF+.png', alt='')

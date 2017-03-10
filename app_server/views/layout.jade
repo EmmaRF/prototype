@@ -1,12 +1,36 @@
 doctype html
 html
   head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    title MAKE studios
-    link(rel='stylesheet', href='/freelancer/css/freelancer.css')
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    // link(rel='stylesheet', href='/css/freelancer.css')
+    // link(rel='stylesheet', href='/css/style.css')
+    
+    
+    // Bootstrap Core CSS
+    
+    link(href='/css/bootstrap.min.css', rel='stylesheet')
+    
+    
+    // Theme CSS
+    
+    link(href='/css/freelancer.min.css', rel='stylesheet')
+    
+    
+    // Custom Fonts
+    
+    link(href='/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+    
+    
+    //Favicon
+    
+    link(rel='shortcut icon', type='image/png', href='/images/yellow puzzle piece.png')
+    
   body
     block content
-    script(src='/javascripts/jqBootstrapValidation.js')
-    script(src='/freelancer/js/freelancer.min.js')
-    script(src='/js/login.js')
+    script(src='/javascripts/bootstrap.min.js')
+    script(src='/javascripts/freelancer.min.js')
+    script(src='/jquery/jquery.min.js')

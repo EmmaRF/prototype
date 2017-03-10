@@ -1,7 +1,6 @@
-//extends layout
-
-
-//block content
+//  ORIGINAL CONTACT FORM
+// extends layout
+// block content
 doctype html
 html
 
@@ -10,9 +9,10 @@ html
     title Sign-Up/Login Form
     link(href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600', rel='stylesheet', type='text/css')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css')
-    
     link(rel='stylesheet', href='css/login.css')
-  
+    //Favicon
+    
+    link(rel='shortcut icon', type='image/png', href='images/yellow puzzle piece.png')
    
   body
     .form
@@ -23,7 +23,7 @@ html
           a(href='#login') Log In
       .tab-content
         #signup
-          h1 Sign Up for Free
+          h1 Sign Up!
           form(action='/', method='post')
             .top-row
               .field-wrap
@@ -43,10 +43,10 @@ html
               input(type='email', required='', autocomplete='off')
             .field-wrap
               label
-                | Set A Password
+                | Set a Password
                 span.req *
               input(type='password', required='', autocomplete='off')
-            button.button.button-block(type='submit') Get Started
+            button.button.button-block(type='submit') Get Started!
         #login
           h1 Welcome Back!
           form(action='/', method='post')
@@ -66,5 +66,7 @@ html
       // tab-content
     // /form
     
-    script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
-        script(src='js/login.js')
+    // script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+    
+    script(src='/jquery/jquery.js')
+    script(src='/javascripts/login.js')
