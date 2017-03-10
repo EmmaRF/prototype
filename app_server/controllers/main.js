@@ -10,3 +10,7 @@ module.exports.login = function(req, res, next) {
 module.exports.resource = function(req, res, next) {
   res.render('resources', { title: 'Resoures' });
 };
+
+module.exports.sidebar = function(req, res, next) {
+  res.render('sidebar', { title: 'Sidebars' });
+};
