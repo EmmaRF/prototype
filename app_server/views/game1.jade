@@ -1,26 +1,15 @@
-doctype html
-html(lang='en')
+extends layout
+
+block content
 
   head
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    meta(name='viewport', content='width=device-width, shrink-to-fit=yes, initial-scale=1')
 
-
-    //Favicon
-    
-    link(rel='shortcut icon', type='image/png', href='images/yellow_puzzle_piece.png')
-    
-    title Read Along with Emma!
-    
-    // Bootstrap Core CSS
-    
-    link(href='css/bootstrap.min.css', rel='stylesheet')
-    
-    // Custom CSS
+    // Sidebar CSS
     
     link(href='css/simple-sidebar.css', rel='stylesheet')
-  
+    
+    title Read Along with Emma!
+
   body
     #wrapper
       // Sidebar
@@ -28,7 +17,7 @@ html(lang='en')
         ul.sidebar-nav
           li.sidebar-brand
             a(href='/')
-              | CHOOSE YOUR LEVEL
+              | OVERBOOKED
           li
             a(href='/easy')
               img.img-responsive(src='/images/monsters/red_monster.png', alt='')
@@ -38,7 +27,8 @@ html(lang='en')
           li
             a(href='/hard')
               img.img-responsive(src='/images/monsters/teal_monster.png', alt='')
-      // /#sidebar-wrapper
+      //end sidebar
+      
       // Page Content
       #page-content-wrapper
         .container-fluid
@@ -47,18 +37,16 @@ html(lang='en')
               h1 Read Along with Emma!
               p
                 | Sounding out words is fun. Let Emma help when you get stuck ...
+              p
+              
+              a#menu-toggle.btn.btn-default(href='#menu-toggle') CHOOSE LEVEL
 
-                | .
-              a#menu-toggle.btn.btn-default(href='#menu-toggle') Pick a level to start ...
-      // /#page-content-wrapper
-    // /#wrapper
-    // jQuery
+    // Scripts
    
-    script(src='jquery/jquery.js')
-    // Bootstrap Core JavaScript
-  
-    script(src='javascripts/bootstrap.min.js')
-    // Menu Toggle Script
+    script(src='/jquery/jquery.min.js')
+
+
+           // Menu Toggle
    
     script.
       $("#menu-toggle").click(function(e) {
@@ -66,7 +54,7 @@ html(lang='en')
       $("#wrapper").toggleClass("toggled");
       });
 
-    // EXTRA NON-VITAL HEADER
+
     // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
     // WARNING: Respond.js doesn't work if you view the page via file://
     //if lt IE 9

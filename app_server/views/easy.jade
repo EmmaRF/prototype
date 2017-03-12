@@ -1,30 +1,15 @@
-// extends sidebar
+extends layout
 
-// block content
-
-doctype html
-html(lang='en')
+block content
 
   head
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    meta(name='viewport', content='width=device-width, shrink-to-fit=yes, initial-scale=1')
-
-
-    //Favicon
-    
-    link(rel='shortcut icon', type='image/png', href='images/yellow_puzzle_piece.png')
-    
-    title Simple Sidebar - Start Bootstrap Template
-    
-    // Bootstrap Core CSS
-    
-    link(href='css/bootstrap.min.css', rel='stylesheet')
-    
-    // Custom CSS
+  
+    // Sidebar CSS
     
     link(href='css/simple-sidebar.css', rel='stylesheet')
-  
+    
+    title Game1 -- Easy
+    
   body
     #wrapper
       // Sidebar
@@ -32,7 +17,7 @@ html(lang='en')
         ul.sidebar-nav
           li.sidebar-brand
             a(href='/')
-              | CHOOSE YOUR LEVEL
+              | OVERBOOKED
           li
             a(href='#')
               img.img-responsive(src='/images/monsters/red_monster.png', alt='')
@@ -42,7 +27,9 @@ html(lang='en')
           li
             a(href='/hard')
               img.img-responsive(src='/images/monsters/teal_monster.png', alt='')
-
+          // end sidebar
+          
+        // Page content
       #page-content-wrapper
         .container-fluid
           .row
@@ -51,16 +38,14 @@ html(lang='en')
               p
                 | See Bob run. RUN, Bob, RUN!
               p
-                | 
-                | .
-              a#menu-toggle.btn.btn-default(href='#menu-toggle') Toggle Menu
 
-          // jQuery
+              a#menu-toggle.btn.btn-default(href='#menu-toggle') LEVEL MENU
+
+    // Scripts
    
-    script(src='jquery/jquery.js')
-    // Bootstrap Core JavaScript
-  
-    script(src='javascripts/bootstrap.min.js')
+    script(src='/jquery/jquery.min.js')
+    
+      // Menu Toggle
     
     script.
       $(document).ready(function() {
