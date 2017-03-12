@@ -15,6 +15,18 @@ module.exports.signup = function(req, res, next) {
   res.render('signup', { title: 'Sign Up' });
 };
 
-module.exports.sidebar = function(req, res, next) {
-  res.render('sidebar', { title: 'Sidebars' });
+module.exports.game1 = function(req, res, next) {
+  res.render('game1', { title: 'Game 1' });
+};
+
+module.exports.easy = function(req, res, next) {
+  res.render('easy', { title: 'Easy' });
+};
+
+module.exports.medium = function(req, res, next) {
+  res.render('medium', { title: 'Medium' });
+};
+
+module.exports.hard = function(req, res, next) {
+  res.render('hard', { title: 'Hard' });
 };
