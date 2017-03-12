@@ -1,18 +1,17 @@
-//  ORIGINAL CONTACT FORM
-// extends layout
-// block content
 doctype html
 html
 
   head
-    meta(charset='UTF-8')
-    title Sign-Up/Login Form
-    link(href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600', rel='stylesheet', type='text/css')
+
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css')
     link(rel='stylesheet', href='css/login.css')
+    
+    
     //Favicon
     
     link(rel='shortcut icon', type='image/png', href='images/yellow_puzzle_piece.png')
+    
+    title Sign-Up/Login Form
    
   body
     .form
@@ -43,7 +42,7 @@ html
               input(type='email', required='', autocomplete='off')
             .field-wrap
               label
-                | Set a Password
+                | Password
                 span.req *
               input(type='password', required='', autocomplete='off')
             button.button.button-block(type='submit') Get Started!
@@ -63,10 +62,10 @@ html
             p.forgot
               a(href='#') Forgot Password?
             button.button.button-block Log In
-      // tab-content
-    // /form
+      // end tab-content
+    // end form
     
-    // script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+    // JQuery & page-specific script
     
-    script(src='/jquery/jquery.js')
+    script(src='/jquery/jquery.min.js')
     script(src='/javascripts/login.js')
