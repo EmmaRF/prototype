@@ -41,10 +41,10 @@ module.exports.userProfile = function(req, res) {
                     });
                     return;
                 } else if (err) {
-                    sendJsonresponse(res, 404, err);
+                    sendJsonResponse(res, 404, err);
                     return;
                 }
-                sendJsonresponse(res, 200, user);
+                sendJsonResponse(res, 200, user);
                 
             })
     } else {
@@ -104,8 +104,6 @@ module.exports.userUpdate = function(req, res) {
     user.firstName = req.body.firstName;
     user.lastName = req.body.lastName;
     user.email = req.body.email;
-
-
     user.save(function(err, user) {
     if (err) {
         sendJsonResponse(res, 404, err);
