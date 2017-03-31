@@ -29,3 +29,7 @@ module.exports.medium = function(req, res) {
 module.exports.hard = function(req, res) {
   res.render('hard', { title: 'Hard' });
 };
+
+module.exports.quiz = function(req, res) {
+  res.render('quiz', { title: 'Quiz' });
+};
