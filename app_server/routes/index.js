@@ -11,5 +11,6 @@ router.get('/blockgame', ctrlMain.blockgame);
 router.get('/easy', ctrlMain.easy);
 router.get('/medium', ctrlMain.medium);
 router.get('/hard', ctrlMain.hard);
+router.get('/quiz', ctrlMain.quiz);
 
 module.exports = router;
