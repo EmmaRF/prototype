@@ -18,6 +18,10 @@ module.exports.game1 = function(req, res, next) {
   res.render('game1', { title: 'Game 1' });
 };
 
+module.exports.blockgame = function(req, res, next) {
+  res.render('blockgame', { title: 'Block Game' });
+};
+
 module.exports.easy = function(req, res, next) {
   res.render('easy', { title: 'Easy' });
 };
