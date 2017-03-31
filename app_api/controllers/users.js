@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
 var User = mongoose.model('User');
 
+
 var sendJsonResponse = function(res, status, content) {
     res.status(status);
     res.json(content);
@@ -52,9 +53,66 @@ module.exports.userProfile = function(req, res) {
         });
     }
 };
-module.exports.userUpdate = function(req, res) { 
-    sendJsonResponse(res, 200, {"status" : "success"})
+// module.exports.userUpdate = function(req, res) { 
+//     sendJsonResponse(res, 200, {"status" : "success"})
+// };
+// module.exports.userDelete = function(req, res) { 
+//     sendJsonResponse(res, 200, {"status" : "success"})
+// };
+
+module.exports.userDelete = function(req, res) {
+    var userid = req.params.userid;
+    if (userid) {
+            User
+            .findByIdAndRemove(userid)
+            .exec(
+        function(err, user) {
+            if (err) {
+                sendJsonResponse(res, 404, err);
+                return;
+            }
+            sendJsonResponse(res, 204, null);
+        }
+    );
+    } else {
+        sendJsonResponse(res, 404, {
+        "message": "No userid"
+        });
+    }
 };
-module.exports.userDelete = function(req, res) { 
-    sendJsonResponse(res, 200, {"status" : "success"})
+
+module.exports.userUpdate = function(req, res) {
+    if (!req.params.userid) {
+        sendJsonResponse(res, 404, {
+        "message": "Not found, userid is required"
+        });
+        return;
+    }
+   User
+    .findById(req.params.userid)
+    .exec(
+    function(err, user) {
+    if (!user) {
+        sendJsonResponse(res, 404, {
+        "message": "userid not found"
+        });
+        return;
+    } else if (err) {
+        sendJsonResponse(res, 400, err);
+        return;
+    }
+    user.firstName = req.body.firstName;
+    user.lastName = req.body.lastName;
+    user.email = req.body.email;
+
+
+    user.save(function(err, user) {
+    if (err) {
+        sendJsonResponse(res, 404, err);
+    } else {
+        sendJsonResponse(res, 200,user);
+        }
+        });
+    }
+);
 };
