@@ -40,10 +40,10 @@ module.exports.userProfile = function(req, res) {
                     });
                     return;
                 } else if (err) {
-                    sendJsonresponse(res, 404, err);
+                    sendJsonResponse(res, 404, err);
                     return;
                 }
-                sendJsonresponse(res, 200, user);
+                sendJsonResponse(res, 200, user);
                 
             })
     } else {
