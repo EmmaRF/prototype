@@ -1,4 +1,4 @@
-var mongoose = require("mongoose");
+var mongoose = require('mongoose');
 
 var detailsSchema = new mongoose.Schema({
     level: { levelNum: Number, levelName: String },

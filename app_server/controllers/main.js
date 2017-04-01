@@ -18,7 +18,6 @@ module.exports.game1 = function(req, res) {
   res.render('game1', { title: 'Game 1' });
 };
 
-
 module.exports.blockgame = function(req, res) {
   res.render('blockgame', { title: 'Block Game' });
 };
