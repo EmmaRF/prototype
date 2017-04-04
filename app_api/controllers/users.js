@@ -11,8 +11,7 @@ module.exports.user = function(req, res) {
     User
         .find()
         .exec(function(err, user) {    
-            res
-                .json(user);  // creates json response with the data 
+            res.json(user);  // creates json response with the data 
     });
 };
 module.exports.userCreate = function(req, res) { 
