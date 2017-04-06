@@ -1,6 +1,6 @@
-// extends layout
+//extends layout
 
-// block content
+//block content
 
 //   head
 
@@ -131,10 +131,18 @@
 // <div id="ans3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
 
+// <br>
+
+// <div id="cat">
+// <img src="/images/animals/cat.png">
+// </div>
+
+// <div id=dancing-cat>
+// <img src="images/dancing/dancing-cats.gif" alt="" class="img-responsive"/>
+// </div>
 
 // </body>
 // </html>
-
 
 
 doctype html
@@ -175,3 +183,8 @@ html
     #ans1(ondrop='drop(event)', ondragover='allowDrop(event)')
     #ans2(ondrop='drop(event)', ondragover='allowDrop(event)')
     #ans3(ondrop='drop(event)', ondragover='allowDrop(event)')
+    br
+    #cat
+      img(src='/images/animals/cat.png')
+    #dancing-cat
+      img.img-responsive(src='images/dancing/dancing-cats.gif', alt='')
