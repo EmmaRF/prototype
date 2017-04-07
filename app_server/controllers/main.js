@@ -37,3 +37,7 @@ module.exports.hard = function(req, res) {
 module.exports.quiz = function(req, res) {
   res.render('quiz', { title: 'Quiz' });
 };
+
+// module.exports.templateQuiz = function(req, res) {
+//   res.render('templateQuiz', { title: 'templateQuiz' });
+// };

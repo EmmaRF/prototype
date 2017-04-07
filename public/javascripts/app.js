@@ -4,7 +4,7 @@ app.directive('quiz', function(quizFactory) {
 	return {
 		restrict: 'AE',
 		scope: {},
-		templateUrl: 'templateQuiz.jade',
+		templateUrl: 'javascripts/templateQuiz.html',
 		link: function(scope, elem, attrs) {
 			scope.start = function() {
 				scope.id = 0;
@@ -58,8 +58,9 @@ app.directive('quiz', function(quizFactory) {
 app.factory('quizFactory', function() {
 	var questions = [
 		{
-			question: "Which is the largest country in the world by population?",
-			options: ["India", "USA", "China", "Russia"],
+			// question: "Which is the largest country in the world by population?",
+			question: 'images/questions/cat.png',
+			options: ["kat", "cot", "cat", "cab"],
 			answer: 2
 		},
 		{
