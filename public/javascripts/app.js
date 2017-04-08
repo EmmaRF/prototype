@@ -4,7 +4,7 @@ app.directive('quiz', function(quizFactory) {
 	return {
 		restrict: 'AE',
 		scope: {},
-		templateUrl: 'templateQuiz.jade',
+		templateUrl: 'javascripts/templateQuiz.html',
 		link: function(scope, elem, attrs) {
 			scope.start = function() {
 				scope.id = 0;
@@ -58,28 +58,29 @@ app.directive('quiz', function(quizFactory) {
 app.factory('quizFactory', function() {
 	var questions = [
 		{
-			question: "Which is the largest country in the world by population?",
-			options: ["India", "USA", "China", "Russia"],
+			// question: "Which is the largest country in the world by population?",
+			question: 'images/questions/cat.png',
+			options: ["kat", "cot", "cat", "catt"],
 			answer: 2
 		},
 		{
-			question: "When did the second world war end?",
-			options: ["1945", "1939", "1944", "1942"],
+			question: 'images/questions/dog.gif-c200',
+			options: ["dog", "dogg", "dawg", "dogh"],
 			answer: 0
 		},
 		{
-			question: "Which was the first country to issue paper currency?",
-			options: ["USA", "France", "Italy", "China"],
+			question: 'images/questions/pig.jpg',
+			options: ["phig", "pigg", "peg", "pig"],
 			answer: 3
 		},
 		{
-			question: "Which city hosted the 1996 Summer Olympics?",
-			options: ["Atlanta", "Sydney", "Athens", "Beijing"],
+			question: 'images/questions/cow.jpg',
+			options: ["cow", "kow", "caw", "cau"],
 			answer: 0
 		},
 		{	
-			question: "Who invented telephone?",
-			options: ["Albert Einstein", "Alexander Graham Bell", "Isaac Newton", "Marie Curie"],
+			question: "images/questions/fish.jpeg",
+			options: ["phish", "fish", "fich", "phich"],
 			answer: 1
 		}
 	];

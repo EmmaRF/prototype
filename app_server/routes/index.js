@@ -12,5 +12,6 @@ router.get('/easy', ctrlMain.easy);
 router.get('/medium', ctrlMain.medium);
 router.get('/hard', ctrlMain.hard);
 router.get('/quiz', ctrlMain.quiz);
+// router.get('/templateQuiz', ctrlMain.templateQuiz);
 
 module.exports = router;
