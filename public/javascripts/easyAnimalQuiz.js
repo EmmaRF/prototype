@@ -17,7 +17,13 @@ app.directive('quiz', function(quizFactory) {
 			scope.reset = function() {
 				scope.inProgress = false;
 				scope.score = 0;
+				scope.info = "This is an easy animal quiz!";
 			}
+			
+			
+			// scope.getInfo = function() {
+			// 	scope.info = "This is an easy animal quiz!";
+			// }
 
 			scope.getQuestion = function() {
 				var q = quizFactory.getQuestion(scope.id);
