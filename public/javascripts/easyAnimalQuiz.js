@@ -11,12 +11,19 @@ app.directive('quiz', function(quizFactory) {
 				scope.quizOver = false;
 				scope.inProgress = true;
 				scope.getQuestion();
+				scope.quizLength= 0
 			};
 
 			scope.reset = function() {
 				scope.inProgress = false;
 				scope.score = 0;
+				scope.info = "This is an easy animal quiz!";
 			}
+			
+			
+			// scope.getInfo = function() {
+			// 	scope.info = "This is an easy animal quiz!";
+			// }
 
 			scope.getQuestion = function() {
 				var q = quizFactory.getQuestion(scope.id);
@@ -25,6 +32,7 @@ app.directive('quiz', function(quizFactory) {
 					scope.options = q.options;
 					scope.answer = q.answer;
 					scope.answerMode = true;
+					scope.quizLength=scope.quizLength+1;
 				} else {
 					scope.quizOver = true;
 				}
@@ -75,12 +83,12 @@ app.factory('quizFactory', function() {
 		},
 		{
 			question: 'images/questions/cow.jpg',
-			options: ["cow", "kow", "caw", "cau"],
+			options: ["cow", "kow", "kau", "cau"],
 			answer: 0
 		},
 		{	
-			question: "images/questions/fish.jpeg",
-			options: ["phish", "fish", "fich", "phich"],
+			question: "images/questions/fox.png",
+			options: ["foxx", "fox", "phox", "phoxx"],
 			answer: 1
 		}
 	];
@@ -93,5 +101,6 @@ app.factory('quizFactory', function() {
 				return false;
 			}
 		}
+		
 	};
 });

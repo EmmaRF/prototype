@@ -34,9 +34,30 @@ module.exports.hard = function(req, res) {
   res.render('hard', { title: 'Hard' });
 };
 
-module.exports.quiz = function(req, res) {
-  res.render('quiz', { title: 'Quiz' });
+module.exports.easyAnimalQuiz = function(req, res) {
+  res.render('easyAnimalQuiz', { title: 'Easy Animal Quiz' });
 };
+
+module.exports.mediumAnimalQuiz = function(req, res) {
+  res.render('mediumAnimalQuiz', { title: 'Medium Animal Quiz' });
+};
+
+module.exports.hardAnimalQuiz = function(req, res) {
+  res.render('hardAnimalQuiz', { title: 'Hard Animal Quiz' });
+};
+
+module.exports.easyKitchenQuiz = function(req, res) {
+  res.render('easyKitchenQuiz', { title: 'Easy Kitchen Quiz' });
+};
+
+module.exports.mediumKitchenQuiz = function(req, res) {
+  res.render('mediumKitchenQuiz', { title: 'Medium Kitchen Quiz' });
+};
+
+module.exports.hardKitchenQuiz = function(req, res) {
+  res.render('hardKitchenQuiz', { title: 'Hard Kitchen Quiz' });
+};
+
 
 // module.exports.templateQuiz = function(req, res) {
 //   res.render('templateQuiz', { title: 'templateQuiz' });
