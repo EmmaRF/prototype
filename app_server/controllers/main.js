@@ -50,6 +50,15 @@ module.exports.easyKitchenQuiz = function(req, res) {
   res.render('easyKitchenQuiz', { title: 'Easy Kitchen Quiz' });
 };
 
+module.exports.mediumKitchenQuiz = function(req, res) {
+  res.render('mediumKitchenQuiz', { title: 'Medium Kitchen Quiz' });
+};
+
+module.exports.hardKitchenQuiz = function(req, res) {
+  res.render('hardKitchenQuiz', { title: 'Hard Kitchen Quiz' });
+};
+
+
 // module.exports.templateQuiz = function(req, res) {
 //   res.render('templateQuiz', { title: 'templateQuiz' });
 // };

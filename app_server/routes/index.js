@@ -15,6 +15,8 @@ router.get('/easyAnimalQuiz', ctrlMain.easyAnimalQuiz);
 router.get('/mediumAnimalQuiz', ctrlMain.mediumAnimalQuiz);
 router.get('/hardAnimalQuiz', ctrlMain.hardAnimalQuiz);
 router.get('/easyKitchenQuiz', ctrlMain.easyKitchenQuiz);
+router.get('/mediumKitchenQuiz', ctrlMain.mediumKitchenQuiz);
+router.get('/hardKitchenQuiz', ctrlMain.hardKitchenQuiz);
 // router.get('/templateQuiz', ctrlMain.templateQuiz);
 
 module.exports = router;
