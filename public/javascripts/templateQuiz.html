@@ -15,6 +15,7 @@
 		<div ng-show="!answerMode">
 			<button ng-click="nextQuestion()" class="next-question">Next</button>
 			<span ng-show="correctAns">That is correct!</span>
+			<span ng-show="correctAns"><img src = "images/questions/smiley.png"></span>
 			<span ng-show="!correctAns">Sorry, that is an incorrect answer.</span>
 		</div>
 	</div>
@@ -22,11 +23,17 @@
 	<div ng-show="quizOver">
 		<h2>Quiz is over</h2>
 		<button ng-click="reset()">Play again</button>
+		<div ng-show="score>quizLength">
+			<p>Perfect!</p>
+			<img src="images/questions/gifts.gif">
+		</div>
+		
 	</div>
 
 	<div id="score">
 		Score: {{score}}
 	</div>
+
 </div>
 
 <div class="intro" ng-show="!inProgress">

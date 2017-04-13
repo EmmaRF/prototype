@@ -11,12 +11,14 @@ app.directive('quiz', function(quizFactory) {
 				scope.quizOver = false;
 				scope.inProgress = true;
 				scope.getQuestion();
+				scope.quizLength= 0;
 			};
 
 			scope.reset = function() {
 				scope.inProgress = false;
 				scope.score = 0;
 			}
+		
 
 			scope.getQuestion = function() {
 				var q = quizFactory.getQuestion(scope.id);
@@ -25,6 +27,7 @@ app.directive('quiz', function(quizFactory) {
 					scope.options = q.options;
 					scope.answer = q.answer;
 					scope.answerMode = true;
+					scope.quizLength=scope.quizLength+1;
 				} else {
 					scope.quizOver = true;
 				}
@@ -59,29 +62,29 @@ app.factory('quizFactory', function() {
 	var questions = [
 		{
 			// question: "Which is the largest country in the world by population?",
-			question: 'images/questions/cat.png',
-			options: ["kat", "cot", "cat", "catt"],
+			question: 'images/questions/tiger.png',
+			options: ["tigerr", "tyger", "tiger", "tigyr"],
 			answer: 2
 		},
 		{
-			question: 'images/questions/dog.gif-c200',
-			options: ["dog", "dogg", "dawg", "dogh"],
+			question: 'images/questions/fish.jpeg',
+			options: ["fish", "fisch", "phish", "physh"],
 			answer: 0
 		},
 		{
-			question: 'images/questions/pig.jpg',
-			options: ["phig", "pigg", "peg", "pig"],
-			answer: 3
+			question: 'images/questions/bear.png',
+			options: ["bare", "bear", "bar", "bere"],
+			answer: 1
 		},
 		{
-			question: 'images/questions/cow.jpg',
-			options: ["cow", "kow", "caw", "cau"],
+			question: 'images/questions/camel.png',
+			options: ["camel", "cammel", "kamel", "kammel"],
 			answer: 0
 		},
 		{	
-			question: "images/questions/fish.jpeg",
-			options: ["phish", "fish", "fich", "phich"],
-			answer: 1
+			question: "images/questions/parrot.png",
+			options: ["parrott", "parott", "parot", "parrot"],
+			answer: 3
 		}
 	];
 
@@ -93,5 +96,7 @@ app.factory('quizFactory', function() {
 				return false;
 			}
 		}
+		
+
 	};
 });
