@@ -72,12 +72,12 @@ app.factory('quizFactory', function() {
 			answer: 2
 		},
 		{
-			question: 'images/questions/dog.gif-c200',
+			question: 'images/questions/dog.png',
 			options: ["dog", "dogg", "dawg", "dogh"],
 			answer: 0
 		},
 		{
-			question: 'images/questions/pig.jpg',
+			question: 'images/questions/pig.png',
 			options: ["phig", "pigg", "peg", "pig"],
 			answer: 3
 		},
