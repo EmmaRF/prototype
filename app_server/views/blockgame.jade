@@ -275,8 +275,108 @@
 
 
 
+// <!DOCTYPE HTML> 
+// <html>
+// <head>
+//   <link href="/style.css" type="text/css" rel="stylesheet"/>
+//   <script type="text/javascript" src="script.js"></script>
+// </head>
+// <body>
+
+// <p>Letters:</p>
+
+// <div class="letter" id="letter1" ondrop="drop(event)" ondragover="allowDrop(event)">
+// <img src=http://www.formallettertemplate.com/wp-content/uploads/2017/03/letter-a-images-letter-a15-lWTMVi.jpg draggable="true"
+// ondragstart="drag(event)" id="drag1" width="64" height="64">
+// </div>
 
 
+
+// <div class="letter" id="letter2" ondrop="drop(event)" ondragover="allowDrop(event)">
+// <img src="http://dailydropcap.com/images/C-4.jpg" draggable="true"
+// ondragstart="drag(event)" id="drag2" width="64" height="64">
+// </div>
+
+
+
+// <div class="letter" id="letter3" ondrop="drop(event)" ondragover="allowDrop(event)">
+// <img src="http://img.clipartall.com/letter-t-clip-art-at-clker-com-vector-clip-art-online-royalty-free-letter-t-clipart-450_600.png" draggable="true"
+// ondragstart="drag(event)" id="drag3" width="64" height="64">
+// </div>
+
+// <br><br><br><br><br>
+
+  
+// <p>Answer:</p>
+
+// <div class = "answer" id="ans1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+// <div class = "answer" id="ans2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+// <div class = "answer" id="ans3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+// <br><br>
+//   <button onclick=correctAnswer()>Check</button>
+
+// <br><br><br><br>
+
+// <!-- <div id="cat">
+// <img src="https://s-media-cache-ak0.pinimg.com/736x/07/c3/45/07c345d0eca11d0bc97c894751ba1b46.jpg">
+// </div> -->
+
+//   <br>
+// <div id="dancing-cat" style="display: none">
+// <!--   <div> -->
+//   <p> Answer: CAT </p>
+//   <img src="http://images5.fanpop.com/image/photos/25000000/Nyan-Cat-dancing-with-Pusheen-the-Cat-nyan-cat-25051166-400-289.gif" alt="" class="img-responsive"/>
+// </div>
+
+// </body>
+// </html>
+
+
+
+
+
+
+
+
+
+
+
+
+// doctype html
+// html
+//   head
+//     link(href='/style.css', type='text/css', rel='stylesheet')
+//     script(type='text/javascript', src='script.js')
+//   body
+//     p Letters:
+//     #letter1.letter(ondrop='drop(event)', ondragover='allowDrop(event)')
+//       img#drag1(src='/images/letters/letter-a-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
+//     #letter2.letter(ondrop='drop(event)', ondragover='allowDrop(event)')
+//       img#drag2(src='/images/letters/letter-c-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
+//     #letter3.letter(ondrop='drop(event)', ondragover='allowDrop(event)')
+//       img#drag3(src="src='/images/letters/letter-t-64.ico'", draggable='true', ondragstart='drag(event)', width='64', height='64')
+//     br
+//     br
+//     br
+//     br
+//     br
+//     p Answer:
+//     #ans1.answer(ondrop='drop(event)', ondragover='allowDrop(event)')
+//     #ans2.answer(ondrop='drop(event)', ondragover='allowDrop(event)')
+//     #ans3.answer(ondrop='drop(event)', ondragover='allowDrop(event)')
+//     br
+//     br
+//     button(onclick='correctAnswer()') Check
+//     br
+//     br
+//     br
+//     br
+//     #cat
+//       img(src='/images/animals/cat.png')
+//     br
+//     #dancing-cat(style='display: none')
+//       p  Answer: CAT 
+//       img.img-responsive(src='images/dancing/dancing-cats.gif', alt='')
 
 
 
@@ -305,7 +405,7 @@ html
     link(href='/css/blockgame.css', type='text/css', rel='stylesheet')
     script(type='text/javascript', src='/javascripts/blockgame.js')
     
-    title Game1 -- Hard
+    title BlockGame Cat
   
   body
     #wrapper
@@ -337,14 +437,25 @@ html
               #letter3.letter(ondrop='drop(event)', ondragover='allowDrop(event)')
                 img#drag3(src='/images/letters/letter-t-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
               br
+              br
+              br
+              br
+              br
               p Answer:
               #ans1.answer(ondrop='drop(event)', ondragover='allowDrop(event)')
               #ans2.answer(ondrop='drop(event)', ondragover='allowDrop(event)')
               #ans3.answer(ondrop='drop(event)', ondragover='allowDrop(event)')
               br
+              br
+              button(onclick='correctAnswer()') Check
+              br
+              br
+              br
+              br
               #cat
                 img(src='/images/animals/cat.png')
-              #dancing-cat
+              #dancing-cat(style='display: none')
+                p Answer: CAT
                 img.img-responsive(src='images/dancing/dancing-cats.gif', alt='')
 
     // Scripts
