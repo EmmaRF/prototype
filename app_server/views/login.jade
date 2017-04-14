@@ -3,13 +3,26 @@ html
 
   head
 
-    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css')
-    link(rel='stylesheet', href='css/login.css')
+    // link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css')
     
+    link(rel='stylesheet', href='css/login.css')
     
     title Sign-Up/Login Form
    
   body
+    nav#mainNav.navbar.navbar-default.navbar-fixed-top.navbar-custom
+      .container
+        // Brand and toggle get grouped for better mobile display
+        
+        .navbar-header.page-scroll
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            |  Menu 
+            i.fa.fa-bars
+          a.navbar-brand(href='/') Overbooked
+        .navbar-collapse
+      .container-fluid
+  
     .form
       ul.tab-group
         li.tab.active
