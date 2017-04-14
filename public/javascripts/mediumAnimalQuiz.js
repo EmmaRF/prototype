@@ -68,7 +68,7 @@ app.factory('quizFactory', function() {
 			answer: 2
 		},
 		{
-			question: 'images/questions/fish.jpeg',
+			question: 'images/questions/fish.png',
 			options: ["fish", "fisch", "phish", "physh"],
 			answer: 0
 		},

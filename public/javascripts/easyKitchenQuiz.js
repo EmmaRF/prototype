@@ -72,12 +72,12 @@ app.factory('quizFactory', function() {
 			answer: 1
 		},
 		{
-			question: 'images/questions/cup.jpg',
+			question: 'images/questions/cup.png',
 			options: ["cupp", "cup", "kup", "kupp"],
 			answer: 1
 		},
 		{
-			question: 'images/questions/egg.jpg',
+			question: 'images/questions/egg.png',
 			options: ["ehgg", "ehg", "eg", "egg"],
 			answer: 3
 		},
@@ -85,7 +85,12 @@ app.factory('quizFactory', function() {
 			question: "images/questions/milk.png",
 			options: ["milk", "melk", "milck", "melck"],
 			answer: 0
-		}
+		},
+		{	
+			question: "images/questions/mug.png",
+			options: ["mug", "mugg", "muhg", "mugh"],
+			answer: 0
+		}	
 	];
 
 	return {
