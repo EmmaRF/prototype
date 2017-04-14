@@ -17,6 +17,7 @@ app.directive('quiz', function(quizFactory) {
 			scope.reset = function() {
 				scope.inProgress = false;
 				scope.score = 0;
+				scope.info = "Emma wants more practice cooking. Now you should get more practice spelling!";
 			}
 		
 

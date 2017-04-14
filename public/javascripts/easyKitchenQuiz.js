@@ -17,6 +17,7 @@ app.directive('quiz', function(quizFactory) {
 			scope.reset = function() {
 				scope.inProgress = false;
 				scope.score = 0;
+				scope.info = "Emma is going to cook for the first time. Help her spell the words in her kitchen!";
 			}
 
 			scope.getQuestion = function() {
