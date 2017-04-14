@@ -212,14 +212,13 @@ block content
               .modal-body
                 h2 Read Along with Emma!
                 hr.star-primary
-                a(href='/game1')
-                  img.img-responsive.img-centered(src='/images/games/reading_with_emma.png', alt='CLICK TO PLAY')
+                img.img-responsive.img-centered(src='/images/games/reading_with_emma.png', alt='CLICK TO PLAY')
                 p
                   | Don't worry about big words -- Emma will help you sound them out.
-
-                button.btn.btn-default(type='button', data-dismiss='modal')
-                  i.fa.fa-times
-                  |  CLOSE
+              .div
+                a(href='/game1')
+                  button.btn.btn-default(type='button')
+                    |  PLAY
     #portfolioModal2.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
       .modal-content
         .close-modal(data-dismiss='modal')
@@ -231,14 +230,13 @@ block content
               .modal-body
                 h2 Spell with Blocks!
                 hr.star-primary
-                a(href='/blockgame')
-                  img.img-responsive.img-centered(src='/images/games/letter_blocks.png', alt='CLICK TO PLAY')
+                img.img-responsive.img-centered(src='/images/games/letter_blocks.png', alt='CLICK TO PLAY')
                 p
                   | Move the blocks around to spell the names of your furry friends.
-                  
-                button.btn.btn-default(type='button', data-dismiss='modal')
-                  i.fa.fa-times
-                  |  Close
+              .div
+                a(href='/blockgame')
+                  button.btn.btn-default(type='button')
+                    |  PLAY BLOCK GAME
     #portfolioModal3.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
       .modal-content
         .close-modal(data-dismiss='modal')
@@ -250,14 +248,17 @@ block content
               .modal-body
                 h2 Take a Fun Quiz!
                 hr.star-primary
-                a(href='/easyAnimalQuiz')
-                  img.img-responsive.img-centered(src='/images/games/quiz_time.png', alt='CLICK TO PLAY')
+                img.img-responsive.img-centered(src='/images/games/quiz_time.png', alt='CLICK TO PLAY')
                 p
                   | Show off how many words you know with one of our themed quizzes. 
-                  
-                button.btn.btn-default(type='button', data-dismiss='modal')
-                  i.fa.fa-times
-                  |  Close
+              .div
+                a(href='/kitchenQuiz')
+                  button.btn.btn-default(type='button')
+                    |  KITCHEN QUIZ
+                span(style='width: 100px')
+                a(href='/animalQuiz')
+                  button.btn.btn-default.btn-kate(type='button')
+                    |  ANIMAL QUIZ
     #portfolioModal4.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
       .modal-content
         .close-modal(data-dismiss='modal')
