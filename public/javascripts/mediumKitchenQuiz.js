@@ -17,6 +17,7 @@ app.directive('quiz', function(quizFactory) {
 			scope.reset = function() {
 				scope.inProgress = false;
 				scope.score = 0;
+				scope.info = "Emma wants more practice cooking. Now you should get more practice spelling!";
 			}
 		
 
@@ -62,7 +63,7 @@ app.factory('quizFactory', function() {
 	var questions = [
 		{
 			// question: "Which is the largest country in the world by population?",
-			question: 'images/questions/butter.gif',
+			question: 'images/questions/butter.png',
 			options: ["buter", "buterr", "butterr", "butter"],
 			answer: 3
 		},

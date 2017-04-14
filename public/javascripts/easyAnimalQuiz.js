@@ -17,7 +17,7 @@ app.directive('quiz', function(quizFactory) {
 			scope.reset = function() {
 				scope.inProgress = false;
 				scope.score = 0;
-				scope.info = "This is an easy animal quiz!";
+				scope.info = "It's Emma's first trip to the Zoo! Help her spell.";
 			}
 			
 			
@@ -72,12 +72,12 @@ app.factory('quizFactory', function() {
 			answer: 2
 		},
 		{
-			question: 'images/questions/dog.gif-c200',
+			question: 'images/questions/dog.png',
 			options: ["dog", "dogg", "dawg", "dogh"],
 			answer: 0
 		},
 		{
-			question: 'images/questions/pig.jpg',
+			question: 'images/questions/pig.png',
 			options: ["phig", "pigg", "peg", "pig"],
 			answer: 3
 		},

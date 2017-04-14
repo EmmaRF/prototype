@@ -17,6 +17,7 @@ app.directive('quiz', function(quizFactory) {
 			scope.reset = function() {
 				scope.inProgress = false;
 				scope.score = 0;
+				scope.info = "Emma is a regular zoo visitor. She wants a challenge now!";
 			}
 
 			scope.getQuestion = function() {

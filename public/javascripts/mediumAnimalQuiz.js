@@ -17,6 +17,7 @@ app.directive('quiz', function(quizFactory) {
 			scope.reset = function() {
 				scope.inProgress = false;
 				scope.score = 0;
+				scope.info = "Emma is going back to the zoo.";
 			}
 		
 
@@ -67,7 +68,7 @@ app.factory('quizFactory', function() {
 			answer: 2
 		},
 		{
-			question: 'images/questions/fish.jpeg',
+			question: 'images/questions/fish.png',
 			options: ["fish", "fisch", "phish", "physh"],
 			answer: 0
 		},
