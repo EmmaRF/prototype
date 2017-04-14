@@ -34,6 +34,10 @@ module.exports.hard = function(req, res) {
   res.render('hard', { title: 'Hard' });
 };
 
+module.exports.animalQuiz = function(req, res) {
+  res.render('animalQuiz', { title: 'Animal Quiz' });
+};
+
 module.exports.easyAnimalQuiz = function(req, res) {
   res.render('easyAnimalQuiz', { title: 'Easy Animal Quiz' });
 };
@@ -44,6 +48,10 @@ module.exports.mediumAnimalQuiz = function(req, res) {
 
 module.exports.hardAnimalQuiz = function(req, res) {
   res.render('hardAnimalQuiz', { title: 'Hard Animal Quiz' });
+};
+
+module.exports.kitchenQuiz = function(req, res) {
+  res.render('kitchenQuiz', { title: 'Kitchen Quiz' });
 };
 
 module.exports.easyKitchenQuiz = function(req, res) {
