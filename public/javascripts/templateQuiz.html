@@ -1,7 +1,7 @@
 <div class="quiz-area" ng-show="inProgress">
 	<div ng-show="!quizOver">
 		<!--<h2 id="question">{{question}}</h2>-->
-		<img src={{question}} height="300" width="300" >
+		<img id = "picture" src={{question}} >
 		<ul id="options">
 			<li ng-repeat="option in options">
 				<label>
@@ -12,10 +12,10 @@
 		</ul>
 		<button ng-click="checkAnswer()" ng-show="answerMode">Submit</button>
 
-		<div ng-show="!answerMode">
+		<div id ="answer" ng-show="!answerMode">
 			<button ng-click="nextQuestion()" class="next-question">Next</button>
 			<span ng-show="correctAns">That is correct!</span>
-			<span ng-show="correctAns"><img src = "images/questions/smiley.png" height="200" width="200"></span>
+			<div ng-show="correctAns"><img src = "images/questions/smiley.png" height="200" width="200" ></div>
 			<span ng-show="!correctAns">Sorry, that is an incorrect answer.</span>
 		</div>
 	</div>
@@ -38,6 +38,7 @@
 
 <div class="intro" ng-show="!inProgress">
 	<!--<p>Welcome to the QuizApp</p>-->
+	<h2>QuizApp</h2>
 	<p>{{info}}</p>
-	<button id="startQuiz" ng-click="start()">Start the Quiz</button>
+	<button id="startQuiz" ng-click="start()" >Start the Quiz</button>
 </div>

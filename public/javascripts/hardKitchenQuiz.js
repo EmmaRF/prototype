@@ -17,6 +17,7 @@ app.directive('quiz', function(quizFactory) {
 			scope.reset = function() {
 				scope.inProgress = false;
 				scope.score = 0;
+				scope.info = "Emma is a great chef now! But are you a great speller?";
 			}
 
 			scope.getQuestion = function() {

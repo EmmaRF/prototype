@@ -13,3 +13,13 @@
   padding: 10px;
   border: 1px solid #aaaaaa;
 }
+
+button {
+	font-size: 18px;
+	color: LavenderBlush ;
+	cursor: pointer;
+	background-color:darkviolet;
+	border-width: thick;
+	border-color: DarkOrchid ;
+	border-radius: 4px;
+}
