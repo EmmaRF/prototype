@@ -3658,6 +3658,10 @@ textarea.input-lg {
     }
 }
 
+.btn-kate {
+    margin-left: 30px;
+}
+
 .btn {
     display: inline-block;
     padding: 6px 12px;

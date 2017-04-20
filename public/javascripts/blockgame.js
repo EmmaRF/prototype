@@ -14,3 +14,18 @@ function drop(ev) {
     var data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
 }//from original html ^
+
+
+function correctAnswer(){
+  var win = document.getElementById("dancing-cat");
+  //show dancing cat;
+  //say congradulations;
+  	if(win.style.display === "block") {
+    		win.style.display = 'none';
+		//text.innerHTML = "show";
+  	}
+	else {
+		win.style.display = 'block';
+		//text.innerHTML = "hide";
+	}
+}
