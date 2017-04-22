@@ -1,0 +1,44 @@
+<div class="quiz-area" ng-show="inProgress">
+	<div ng-show="!quizOver">
+		<!--<h2 id="question">{{question}}</h2>-->
+		<img id = "picture" src={{question}} >
+		<ul id="options">
+			<li ng-repeat="option in options">
+				<label>
+					<input type="radio" name="answer" value="{{option}}">
+					{{option}}
+				</label>
+			</li>
+		</ul>
+		<button ng-click="checkAnswer()" ng-show="answerMode">Submit</button>
+
+		<div id ="answer" ng-show="!answerMode">
+			<button ng-click="nextQuestion()" class="next-question">Next</button>
+			<span ng-show="correctAns">That is correct!</span>
+			<div ng-show="correctAns"><img src = "images/questions/smiley.png" height="200" width="200" ></div>
+			<span ng-show="!correctAns">Sorry, that is an incorrect answer.</span>
+		</div>
+	</div>
+
+	<div ng-show="quizOver">
+		<h2>Quiz is over</h2>
+		<button ng-click="reset()">Play again</button>
+		<div ng-show="score>quizLength">
+			<p>Perfect!</p>
+			<img src="images/questions/gifts.gif" height="200" width="200">
+		</div>
+		
+	</div>
+
+	<div id="score">
+		Score: {{score}}
+	</div>
+
+</div>
+
+<div class="intro" ng-show="!inProgress">
+	<!--<p>Welcome to the QuizApp</p>-->
+	<h2>QuizApp</h2>
+	<p>{{info}}</p>
+	<button id="startQuiz" ng-click="start()" >Start the Quiz</button>
+</div>
