@@ -8,6 +8,8 @@ router.get('/resources', ctrlMain.resources);
 router.get('/signup', ctrlMain.signup);
 router.get('/game1', ctrlMain.game1);
 router.get('/blockgame', ctrlMain.blockgame);
+router.get('/blockgameCat',ctrlMain.blockgameCat);//route for main blockgame, will change currently blockgame into blockgamecat
+router.get('/blockgameBear',ctrlMain.blockgameBear);
 router.get('/easy', ctrlMain.easy);
 router.get('/medium', ctrlMain.medium);
 router.get('/hard', ctrlMain.hard);
