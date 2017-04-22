@@ -74,7 +74,6 @@ module.exports.hardKitchenQuiz = function(req, res) {
   res.render('hardKitchenQuiz', { title: 'Hard Kitchen Quiz' });
 };
 
-
-// module.exports.templateQuiz = function(req, res) {
-//   res.render('templateQuiz', { title: 'templateQuiz' });
-// };
+module.exports.profile = function(req, res) {
+  res.render('profile', { title: 'User Profile' });
+};

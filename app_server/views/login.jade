@@ -26,10 +26,26 @@ html
     .form
       ul.tab-group
         li.tab.active
-          a(href='#signup') Sign Up
-        li.tab
           a(href='#login') Log In
+        li.tab
+          a(href='#signup') Sign Up
       .tab-content
+        #login
+          h1 Welcome Back!
+          form(action='/', method='post')
+            .field-wrap
+              label
+                | Email Address
+                span.req *
+              input(type='email', required='', autocomplete='off')
+            .field-wrap
+              label
+                | Password
+                span.req *
+              input(type='password', required='', autocomplete='off')
+            p.forgot
+              a(href='#') Forgot Password?
+            button.button.button-block Log In
         #signup
           h1 Sign Up!
           form(action='/', method='post')
@@ -55,22 +71,6 @@ html
                 span.req *
               input(type='password', required='', autocomplete='off')
             button.button.button-block(type='submit') Get Started!
-        #login
-          h1 Welcome Back!
-          form(action='/', method='post')
-            .field-wrap
-              label
-                | Email Address
-                span.req *
-              input(type='email', required='', autocomplete='off')
-            .field-wrap
-              label
-                | Password
-                span.req *
-              input(type='password', required='', autocomplete='off')
-            p.forgot
-              a(href='#') Forgot Password?
-            button.button.button-block Log In
       // end tab-content
     // end form
     
