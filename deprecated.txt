@@ -1,0 +1,1005 @@
+// // extends layout
+
+// // block content
+
+// //   head
+
+// //     // Sidebar CSS
+    
+// //    link(href='css/simple-sidebar.css', rel='stylesheet')
+
+    
+// //    title Block games, YAY!
+
+// //   body
+// //     #wrapper
+// //       // Sidebar
+// //       #sidebar-wrapper
+// //         ul.sidebar-nav
+// //           li.sidebar-brand
+// //             a(href='/')
+// //               | OVERBOOKED
+// //           li
+// //             a(href='/easy')
+// //               img.img-responsive(src='/images/monsters/red_monster.png', alt='')
+// //           li
+// //             a(href='/medium')
+// //               img.img-responsive(src='/images/monsters/lavender_monster.png', alt='')
+// //           li
+// //             a(href='/hard')
+// //               img.img-responsive(src='/images/monsters/teal_monster.png', alt='')
+// //       //end sidebar
+      
+// //       // Page Content
+// //       #page-content-wrapper
+// //         .container-fluid
+// //           .row
+// //             .col-lg-12
+// //               h1 Try spelling the word
+// //               p
+// //                 | Look an animal, trying spelling what it is, put the block letters in the proper order. // I changed a little try adding pics 
+// //               p
+              
+// //               a#menu-toggle.btn.btn-default(href='#menu-toggle') CHOOSE LEVEL
+
+// //     // Scripts
+   
+// //     script(src='/jquery/jquery.min.js')
+// //     //script(src='/javascripts/blockgame.js') not ready yet, for this one possibly
+
+// //           // Menu Toggle
+   
+// //     script.
+// //       $("#menu-toggle").click(function(e) {
+// //       e.preventDefault();
+// //       $("#wrapper").toggleClass("toggled");
+// //       });
+
+
+// //     // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+// //     // WARNING: Respond.js doesn't work if you view the page via file://
+// //     //if lt IE 9
+// //     // script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+// //     //  script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    
+    
+    
+    
+// // <!DOCTYPE HTML> 
+// // <html>
+// // <head>
+// // <style> //<link href="/css/blockgame.css" type="text/css" rel="stylesheet"/>
+// // #ans1, #ans2, #ans3, #letter1, #letter2, #letter3 {
+// //     float: left;
+// //     width: 64px;
+// //     height: 64px;
+// //     padding: 10px;
+// //     border: 1px solid #aaaaaa;
+// // }
+
+
+
+// // </style>
+// // <script>                  //<script type="text/javascript" src="/javascripts/blockgame.js"></script>
+
+// // function allowDrop(ev) {
+// //     ev.preventDefault();
+// // }
+
+
+// // function drag(ev) {
+// //     ev.dataTransfer.setData("text", ev.target.id);
+// // }
+
+
+// // function drop(ev) {
+// //     ev.preventDefault();
+// //     var data = ev.dataTransfer.getData("text");
+// //     ev.target.appendChild(document.getElementById(data));
+// // }
+// // </script>
+// // </head>
+// // <body>
+
+// // <p>Letters:</p>
+
+// // <div id="letter1" ondrop="drop(event)" ondragover="allowDrop(event)">
+// // <img src="/images/letters/letter-a-64.ico" draggable="true"
+// // ondragstart="drag(event)" id="drag1" width="64" height="64">
+// // </div>
+
+
+
+// // <div id="letter2" ondrop="drop(event)" ondragover="allowDrop(event)">
+// // <img src="/images/letters/letter-c-64.ico" draggable="true"
+// // ondragstart="drag(event)" id="drag2" width="64" height="64">
+// // </div>
+
+
+
+// // <div id="letter3" ondrop="drop(event)" ondragover="allowDrop(event)">
+// // <img src="/images/letters/letter-t-64.ico" draggable="true"
+// // ondragstart="drag(event)" id="drag3" width="64" height="64">
+// // </div>
+
+// // <br>
+
+// // <p>Answer:</p>
+
+// // <div id="ans1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+// // <div id="ans2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+// // <div id="ans3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+
+// // <br>
+
+// // <div id="cat">
+// // <img src="/images/animals/cat.png">
+// // </div>
+
+// // <div id=dancing-cat>
+// // <img src="images/dancing/dancing-cats.gif" alt="" class="img-responsive"/>
+// // </div>
+
+// // </body>
+// // </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // <!DOCTYPE HTML> 
+// // <html>
+// // <head>
+// //   <link href="/style.css" type="text/css" rel="stylesheet"/>
+// //   <script type="text/javascript" src="script.js"></script>
+// // </head>
+// // <body>
+
+// // <p>Letters:</p>
+
+// // <div class="letter" id="letter1" ondrop="drop(event)" ondragover="allowDrop(event)">
+// // <img src=http://www.formallettertemplate.com/wp-content/uploads/2017/03/letter-a-images-letter-a15-lWTMVi.jpg draggable="true"
+// // ondragstart="drag(event)" id="drag1" width="64" height="64">
+// // </div>
+
+
+
+// // <div class="letter" id="letter2" ondrop="drop(event)" ondragover="allowDrop(event)">
+// // <img src="http://dailydropcap.com/images/C-4.jpg" draggable="true"
+// // ondragstart="drag(event)" id="drag2" width="64" height="64">
+// // </div>
+
+
+
+// // <div class="letter" id="letter3" ondrop="drop(event)" ondragover="allowDrop(event)">
+// // <img src="http://img.clipartall.com/letter-t-clip-art-at-clker-com-vector-clip-art-online-royalty-free-letter-t-clipart-450_600.png" draggable="true"
+// // ondragstart="drag(event)" id="drag3" width="64" height="64">
+// // </div>
+
+// // <br>
+
+// // <p>Answer:</p>
+
+// // <div class = "answer" id="ans1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+// // <div class = "answer" id="ans2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+// // <div class = "answer" id="ans3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+
+// // <br>
+
+// // <div id="cat">
+// // <img src="https://s-media-cache-ak0.pinimg.com/736x/07/c3/45/07c345d0eca11d0bc97c894751ba1b46.jpg">
+// // </div>
+
+// // <div id=dancing-cat>
+// // <img src="http://images5.fanpop.com/image/photos/25000000/Nyan-Cat-dancing-with-Pusheen-the-Cat-nyan-cat-25051166-400-289.gif" alt="" class="img-responsive"/>
+// // </div>
+
+// // </body>
+// // </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // doctype html
+// // html
+// //   head
+  
+// //     style.
+// //       #ans1, #ans2, #ans3, #letter1, #letter2, #letter3 {
+// //       float: left;
+// //       width: 64px;
+// //       height: 64px;
+// //       padding: 10px;
+// //       border: 1px solid #aaaaaa;
+// //       }
+// //     script.
+// //       function allowDrop(ev) {
+// //       ev.preventDefault();
+// //       }
+// //       function drag(ev) {
+// //       ev.dataTransfer.setData("text", ev.target.id);
+// //       }
+// //       function drop(ev) {
+// //       ev.preventDefault();
+// //       var data = ev.dataTransfer.getData("text");
+// //       ev.target.appendChild(document.getElementById(data));
+// //       }
+// //   body
+// //     p Letters:
+// //     #letter1(ondrop='drop(event)', ondragover='allowDrop(event)')
+// //       img#drag1(src='/images/letters/letter-a-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
+    
+// //     #letter2(ondrop='drop(event)', ondragover='allowDrop(event)')
+// //       img#drag2(src='/images/letters/letter-c-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
+    
+// //     #letter3(ondrop='drop(event)', ondragover='allowDrop(event)')
+// //       img#drag3(src='/images/letters/letter-t-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
+// //     br
+// //     p Answer:
+// //     #ans1(ondrop='drop(event)', ondragover='allowDrop(event)')
+// //     #ans2(ondrop='drop(event)', ondragover='allowDrop(event)')
+// //     #ans3(ondrop='drop(event)', ondragover='allowDrop(event)')
+// //     br
+// //     #cat
+// //       img(src='/images/animals/cat.png')
+// //     #dancing-cat
+// //       img.img-responsive(src='images/dancing/dancing-cats.gif', alt='')
+
+
+
+
+
+
+
+
+
+// // <!DOCTYPE HTML> 
+// // <html>
+// // <head>
+// //   <link href="/style.css" type="text/css" rel="stylesheet"/>
+// //   <script type="text/javascript" src="script.js"></script>
+// // </head>
+// // <body>
+
+// // <p>Letters:</p>
+
+// // <div class="letter" id="letter1" ondrop="drop(event)" ondragover="allowDrop(event)">
+// // <img src=http://www.formallettertemplate.com/wp-content/uploads/2017/03/letter-a-images-letter-a15-lWTMVi.jpg draggable="true"
+// // ondragstart="drag(event)" id="drag1" width="64" height="64">
+// // </div>
+
+
+
+// // <div class="letter" id="letter2" ondrop="drop(event)" ondragover="allowDrop(event)">
+// // <img src="http://dailydropcap.com/images/C-4.jpg" draggable="true"
+// // ondragstart="drag(event)" id="drag2" width="64" height="64">
+// // </div>
+
+
+
+// // <div class="letter" id="letter3" ondrop="drop(event)" ondragover="allowDrop(event)">
+// // <img src="http://img.clipartall.com/letter-t-clip-art-at-clker-com-vector-clip-art-online-royalty-free-letter-t-clipart-450_600.png" draggable="true"
+// // ondragstart="drag(event)" id="drag3" width="64" height="64">
+// // </div>
+
+// // <br><br><br><br><br>
+
+  
+// // <p>Answer:</p>
+
+// // <div class = "answer" id="ans1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+// // <div class = "answer" id="ans2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+// // <div class = "answer" id="ans3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+// // <br><br>
+// //   <button onclick=correctAnswer()>Check</button>
+
+// // <br><br><br><br>
+
+// // <!-- <div id="cat">
+// // <img src="https://s-media-cache-ak0.pinimg.com/736x/07/c3/45/07c345d0eca11d0bc97c894751ba1b46.jpg">
+// // </div> -->
+
+// //   <br>
+// // <div id="dancing-cat" style="display: none">
+// // <!--   <div> -->
+// //   <p> Answer: CAT </p>
+// //   <img src="http://images5.fanpop.com/image/photos/25000000/Nyan-Cat-dancing-with-Pusheen-the-Cat-nyan-cat-25051166-400-289.gif" alt="" class="img-responsive"/>
+// // </div>
+
+// // </body>
+// // </html>
+
+
+
+
+
+
+
+
+
+
+
+
+// // doctype html
+// // html
+// //   head
+// //     link(href='/style.css', type='text/css', rel='stylesheet')
+// //     script(type='text/javascript', src='script.js')
+// //   body
+// //     p Letters:
+// //     #letter1.letter(ondrop='drop(event)', ondragover='allowDrop(event)')
+// //       img#drag1(src='/images/letters/letter-a-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
+// //     #letter2.letter(ondrop='drop(event)', ondragover='allowDrop(event)')
+// //       img#drag2(src='/images/letters/letter-c-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
+// //     #letter3.letter(ondrop='drop(event)', ondragover='allowDrop(event)')
+// //       img#drag3(src="src='/images/letters/letter-t-64.ico'", draggable='true', ondragstart='drag(event)', width='64', height='64')
+// //     br
+// //     br
+// //     br
+// //     br
+// //     br
+// //     p Answer:
+// //     #ans1.answer(ondrop='drop(event)', ondragover='allowDrop(event)')
+// //     #ans2.answer(ondrop='drop(event)', ondragover='allowDrop(event)')
+// //     #ans3.answer(ondrop='drop(event)', ondragover='allowDrop(event)')
+// //     br
+// //     br
+// //     button(onclick='correctAnswer()') Check
+// //     br
+// //     br
+// //     br
+// //     br
+// //     #cat
+// //       img(src='/images/animals/cat.png')
+// //     br
+// //     #dancing-cat(style='display: none')
+// //       p  Answer: CAT 
+// //       img.img-responsive(src='images/dancing/dancing-cats.gif', alt='')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// doctype html
+// html
+
+//     head
+  
+//     // Sidebar CSS
+    
+//     link(href='css/simple-sidebar.css', rel='stylesheet')
+//     link(href='/css/blockgame.css', type='text/css', rel='stylesheet')
+//     script(type='text/javascript', src='/javascripts/blockgame.js')
+    
+//     title BlockGame Cat
+  
+//   body
+//     #wrapper
+//       // Sidebar
+//       #sidebar-wrapper
+//         ul.sidebar-nav
+//           li.sidebar-brand
+//             a(href='/')
+//               | OVERBOOKED
+//           li
+//             a(href='/blockgame')
+//               img.img-responsive(src='/images/animals/cat.png', alt='')
+//           li
+//             a(href='/blockgame')
+//               img.img-responsive(src='/images/animals/horse.png', alt='')
+//           li
+//             a(href='#')
+//               img.img-responsive(src='/images/animals/raccoon.png', alt='')
+
+//       #page-content-wrapper
+//         .container-fluid
+//           .row
+//             .col-lg-12
+//               p Letters:
+//               #letter1.letter(ondrop='drop(event)', ondragover='allowDrop(event)')
+//                 img#drag1(src='/images/letters/letter-a-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
+//               #letter2.letter(ondrop='drop(event)', ondragover='allowDrop(event)')
+//                 img#drag2(src='/images/letters/letter-c-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
+//               #letter3.letter(ondrop='drop(event)', ondragover='allowDrop(event)')
+//                 img#drag3(src='/images/letters/letter-t-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
+//               br
+//               br
+//               br
+//               br
+//               br
+//               p Answer:
+//               #ans1.answer(ondrop='drop(event)', ondragover='allowDrop(event)')
+//               #ans2.answer(ondrop='drop(event)', ondragover='allowDrop(event)')
+//               #ans3.answer(ondrop='drop(event)', ondragover='allowDrop(event)')
+//               br
+//               br
+//               button(onclick='correctAnswer()') Check
+//               br
+//               br
+//               br
+//               br
+//               #cat
+//                 img(src='/images/animals/cat.png')
+//               #dancing-cat(style='display: none')
+//                 p Answer: CAT
+//                 img.img-responsive(src='images/dancing/dancing-cats.gif', alt='')
+//                 button(onclick='correctAnswer()') Next Game 
+
+//     // Scripts
+   
+//     script(src='/jquery/jquery.min.js')
+    
+//       // Menu Toggle
+    
+//     script.
+//       $(document).ready(function() {
+//       $("#wrapper").toggleClass("toggled");
+//       });
+//       $("#menu-toggle").click(function(e) {
+//       e.preventDefault();
+//       $("#wrapper").toggleClass("toggled");
+//       });
+
+
+
+// <!DOCTYPE html>
+// <html>
+//   <head></head>
+//   <!-- Sidebar CSS-->
+//   <link href="css/simple-sidebar.css" rel="stylesheet">
+//   <link href="/css/blockgame.css" type="text/css" rel="stylesheet">
+//   <script type="text/javascript" src="/javascripts/blockgame.js"></script>
+//   <title>BlockGame</title>
+//   </head>
+// <body>
+//   <div id="wrapper">
+//     <!-- Sidebar-->
+//     <div>
+//         <a href="/">OVERBOOKED</a>
+//         <br>
+//         <br>
+//         <br>
+//         <p>Three Letter words</p>
+//         <a href="/blockgameCat"><img src="/images/animals/cat.png" alt="" class="img-responsive"></a>
+//         <a href="/blockgame"><img src="/images/animals/bee.png" alt="" class="img-responsive"></a>
+//         <a href="/blockgame"><img src="/images/animals/dog.png" alt="" class="img-responsive"></a>
+//         <a href="/blockgame"><img src="/images/animals/fox.png" alt="" class="img-responsive"></a>
+//         <a href="/blockgame"><img src="/images/animals/owl.png" alt="" class="img-responsive"></a>
+//         <a href="/blockgame"><img src="/images/animals/pig.png" alt="" class="img-responsive"></a>
+        
+//         <br>
+//         <br>
+//         <br>
+//         <p>Four Letter words</p>
+//         <a href="/blockgameBear"><img src="/images/animals/bear.png" alt="" class="img-responsive"></a>
+//         <a href="/blockgame"><img src="/images/animals/deer.png" alt="" class="img-responsive"></a>
+//         <a href="/blockgame"><img src="/images/animals/duck.png" alt="" class="img-responsive"></a>
+//         <a href="/blockgame"><img src="/images/animals/frog.png" alt="" class="img-responsive"></a>
+        
+        
+//         <br>
+//         <br>
+//         <br>
+        
+//         <p>Five Letter Words</p>
+//         <a href="/blockgame"><img src="/images/animals/horse.png" alt="" class="img-responsive"></a>
+//         <a href="/blockgame"><img src="/images/animals/bunny.png" alt="" class="img-responsive"></a>
+//         <a href="/blockgame"><img src="/images/animals/koala.png" alt="" class="img-responsive"></a>
+//         <a href="/blockgame"><img src="/images/animals/sheep.png" alt="" class="img-responsive"></a>
+//         <a href="/blockgame"><img src="/images/animals/sloth.png" alt="" class="img-responsive"></a>
+        
+        
+//         <br>
+//         <br>
+//         <br>
+        
+        
+//         <p>More Letter Words</p>
+//         <a href="/blockgame"><img src="/images/animals/monkey.png" alt="" class="img-responsive"></a>
+//         <a href="/blockgame"><img src="/images/animals/penguin.png" alt="" class="img-responsive"></a>
+//         <a href="/blockgame"><img src="/images/animals/raccoon.png" alt="" class="img-responsive"></a>
+        
+//       </ul>
+//     </div>
+//   </div>
+// </body>
+
+
+
+
+
+// extends layout
+
+// block content
+
+//   head
+
+//     // Sidebar CSS
+    
+//    link(href='css/simple-sidebar.css', rel='stylesheet')
+
+    
+//    title Block games, YAY!
+
+//   body
+//     #wrapper
+//       // Sidebar
+//       #sidebar-wrapper
+//         ul.sidebar-nav
+//           li.sidebar-brand
+//             a(href='/')
+//               | OVERBOOKED
+//           li
+//             a(href='/easy')
+//               img.img-responsive(src='/images/monsters/red_monster.png', alt='')
+//           li
+//             a(href='/medium')
+//               img.img-responsive(src='/images/monsters/lavender_monster.png', alt='')
+//           li
+//             a(href='/hard')
+//               img.img-responsive(src='/images/monsters/teal_monster.png', alt='')
+//       //end sidebar
+      
+//       // Page Content
+//       #page-content-wrapper
+//         .container-fluid
+//           .row
+//             .col-lg-12
+//               h1 Try spelling the word
+//               p
+//                 | Look an animal, trying spelling what it is, put the block letters in the proper order. // I changed a little try adding pics 
+//               p
+              
+//               a#menu-toggle.btn.btn-default(href='#menu-toggle') CHOOSE LEVEL
+
+//     // Scripts
+   
+//     script(src='/jquery/jquery.min.js')
+//     //script(src='/javascripts/blockgame.js') not ready yet, for this one possibly
+
+//           // Menu Toggle
+   
+//     script.
+//       $("#menu-toggle").click(function(e) {
+//       e.preventDefault();
+//       $("#wrapper").toggleClass("toggled");
+//       });
+
+
+//     // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+//     // WARNING: Respond.js doesn't work if you view the page via file://
+//     //if lt IE 9
+//     // script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+//     //  script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    
+    
+    
+    
+// <!DOCTYPE HTML> 
+// <html>
+// <head>
+// <style> //<link href="/css/blockgame.css" type="text/css" rel="stylesheet"/>
+// #ans1, #ans2, #ans3, #letter1, #letter2, #letter3 {
+//     float: left;
+//     width: 64px;
+//     height: 64px;
+//     padding: 10px;
+//     border: 1px solid #aaaaaa;
+// }
+
+
+
+// </style>
+// <script>                  //<script type="text/javascript" src="/javascripts/blockgame.js"></script>
+
+// function allowDrop(ev) {
+//     ev.preventDefault();
+// }
+
+
+// function drag(ev) {
+//     ev.dataTransfer.setData("text", ev.target.id);
+// }
+
+
+// function drop(ev) {
+//     ev.preventDefault();
+//     var data = ev.dataTransfer.getData("text");
+//     ev.target.appendChild(document.getElementById(data));
+// }
+// </script>
+// </head>
+// <body>
+
+// <p>Letters:</p>
+
+// <div id="letter1" ondrop="drop(event)" ondragover="allowDrop(event)">
+// <img src="/images/letters/letter-a-64.ico" draggable="true"
+// ondragstart="drag(event)" id="drag1" width="64" height="64">
+// </div>
+
+
+
+// <div id="letter2" ondrop="drop(event)" ondragover="allowDrop(event)">
+// <img src="/images/letters/letter-c-64.ico" draggable="true"
+// ondragstart="drag(event)" id="drag2" width="64" height="64">
+// </div>
+
+
+
+// <div id="letter3" ondrop="drop(event)" ondragover="allowDrop(event)">
+// <img src="/images/letters/letter-t-64.ico" draggable="true"
+// ondragstart="drag(event)" id="drag3" width="64" height="64">
+// </div>
+
+// <br>
+
+// <p>Answer:</p>
+
+// <div id="ans1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+// <div id="ans2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+// <div id="ans3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+
+// <br>
+
+// <div id="cat">
+// <img src="/images/animals/cat.png">
+// </div>
+
+// <div id=dancing-cat>
+// <img src="images/dancing/dancing-cats.gif" alt="" class="img-responsive"/>
+// </div>
+
+// </body>
+// </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <!DOCTYPE HTML> 
+// <html>
+// <head>
+//   <link href="/style.css" type="text/css" rel="stylesheet"/>
+//   <script type="text/javascript" src="script.js"></script>
+// </head>
+// <body>
+
+// <p>Letters:</p>
+
+// <div class="letter" id="letter1" ondrop="drop(event)" ondragover="allowDrop(event)">
+// <img src=http://www.formallettertemplate.com/wp-content/uploads/2017/03/letter-a-images-letter-a15-lWTMVi.jpg draggable="true"
+// ondragstart="drag(event)" id="drag1" width="64" height="64">
+// </div>
+
+
+
+// <div class="letter" id="letter2" ondrop="drop(event)" ondragover="allowDrop(event)">
+// <img src="http://dailydropcap.com/images/C-4.jpg" draggable="true"
+// ondragstart="drag(event)" id="drag2" width="64" height="64">
+// </div>
+
+
+
+// <div class="letter" id="letter3" ondrop="drop(event)" ondragover="allowDrop(event)">
+// <img src="http://img.clipartall.com/letter-t-clip-art-at-clker-com-vector-clip-art-online-royalty-free-letter-t-clipart-450_600.png" draggable="true"
+// ondragstart="drag(event)" id="drag3" width="64" height="64">
+// </div>
+
+// <br>
+
+// <p>Answer:</p>
+
+// <div class = "answer" id="ans1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+// <div class = "answer" id="ans2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+// <div class = "answer" id="ans3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+
+// <br>
+
+// <div id="cat">
+// <img src="https://s-media-cache-ak0.pinimg.com/736x/07/c3/45/07c345d0eca11d0bc97c894751ba1b46.jpg">
+// </div>
+
+// <div id=dancing-cat>
+// <img src="http://images5.fanpop.com/image/photos/25000000/Nyan-Cat-dancing-with-Pusheen-the-Cat-nyan-cat-25051166-400-289.gif" alt="" class="img-responsive"/>
+// </div>
+
+// </body>
+// </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// doctype html
+// html
+//   head
+  
+//     style.
+//       #ans1, #ans2, #ans3, #letter1, #letter2, #letter3 {
+//       float: left;
+//       width: 64px;
+//       height: 64px;
+//       padding: 10px;
+//       border: 1px solid #aaaaaa;
+//       }
+//     script.
+//       function allowDrop(ev) {
+//       ev.preventDefault();
+//       }
+//       function drag(ev) {
+//       ev.dataTransfer.setData("text", ev.target.id);
+//       }
+//       function drop(ev) {
+//       ev.preventDefault();
+//       var data = ev.dataTransfer.getData("text");
+//       ev.target.appendChild(document.getElementById(data));
+//       }
+//   body
+//     p Letters:
+//     #letter1(ondrop='drop(event)', ondragover='allowDrop(event)')
+//       img#drag1(src='/images/letters/letter-a-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
+    
+//     #letter2(ondrop='drop(event)', ondragover='allowDrop(event)')
+//       img#drag2(src='/images/letters/letter-c-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
+    
+//     #letter3(ondrop='drop(event)', ondragover='allowDrop(event)')
+//       img#drag3(src='/images/letters/letter-t-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
+//     br
+//     p Answer:
+//     #ans1(ondrop='drop(event)', ondragover='allowDrop(event)')
+//     #ans2(ondrop='drop(event)', ondragover='allowDrop(event)')
+//     #ans3(ondrop='drop(event)', ondragover='allowDrop(event)')
+//     br
+//     #cat
+//       img(src='/images/animals/cat.png')
+//     #dancing-cat
+//       img.img-responsive(src='images/dancing/dancing-cats.gif', alt='')
+
+
+
+
+
+
+
+
+
+// <!DOCTYPE HTML> 
+// <html>
+// <head>
+//   <link href="/style.css" type="text/css" rel="stylesheet"/>
+//   <script type="text/javascript" src="script.js"></script>
+// </head>
+// <body>
+
+// <p>Letters:</p>
+
+// <div class="letter" id="letter1" ondrop="drop(event)" ondragover="allowDrop(event)">
+// <img src=http://www.formallettertemplate.com/wp-content/uploads/2017/03/letter-a-images-letter-a15-lWTMVi.jpg draggable="true"
+// ondragstart="drag(event)" id="drag1" width="64" height="64">
+// </div>
+
+
+
+// <div class="letter" id="letter2" ondrop="drop(event)" ondragover="allowDrop(event)">
+// <img src="http://dailydropcap.com/images/C-4.jpg" draggable="true"
+// ondragstart="drag(event)" id="drag2" width="64" height="64">
+// </div>
+
+
+
+// <div class="letter" id="letter3" ondrop="drop(event)" ondragover="allowDrop(event)">
+// <img src="http://img.clipartall.com/letter-t-clip-art-at-clker-com-vector-clip-art-online-royalty-free-letter-t-clipart-450_600.png" draggable="true"
+// ondragstart="drag(event)" id="drag3" width="64" height="64">
+// </div>
+
+// <br><br><br><br><br>
+
+  
+// <p>Answer:</p>
+
+// <div class = "answer" id="ans1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+// <div class = "answer" id="ans2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+// <div class = "answer" id="ans3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+// <br><br>
+//   <button onclick=correctAnswer()>Check</button>
+
+// <br><br><br><br>
+
+// <!-- <div id="cat">
+// <img src="https://s-media-cache-ak0.pinimg.com/736x/07/c3/45/07c345d0eca11d0bc97c894751ba1b46.jpg">
+// </div> -->
+
+//   <br>
+// <div id="dancing-cat" style="display: none">
+// <!--   <div> -->
+//   <p> Answer: CAT </p>
+//   <img src="http://images5.fanpop.com/image/photos/25000000/Nyan-Cat-dancing-with-Pusheen-the-Cat-nyan-cat-25051166-400-289.gif" alt="" class="img-responsive"/>
+// </div>
+
+// </body>
+// </html>
+
+
+
+
+
+
+
+
+
+
+
+
+// doctype html
+// html
+//   head
+//     link(href='/style.css', type='text/css', rel='stylesheet')
+//     script(type='text/javascript', src='script.js')
+//   body
+//     p Letters:
+//     #letter1.letter(ondrop='drop(event)', ondragover='allowDrop(event)')
+//       img#drag1(src='/images/letters/letter-a-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
+//     #letter2.letter(ondrop='drop(event)', ondragover='allowDrop(event)')
+//       img#drag2(src='/images/letters/letter-c-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
+//     #letter3.letter(ondrop='drop(event)', ondragover='allowDrop(event)')
+//       img#drag3(src="src='/images/letters/letter-t-64.ico'", draggable='true', ondragstart='drag(event)', width='64', height='64')
+//     br
+//     br
+//     br
+//     br
+//     br
+//     p Answer:
+//     #ans1.answer(ondrop='drop(event)', ondragover='allowDrop(event)')
+//     #ans2.answer(ondrop='drop(event)', ondragover='allowDrop(event)')
+//     #ans3.answer(ondrop='drop(event)', ondragover='allowDrop(event)')
+//     br
+//     br
+//     button(onclick='correctAnswer()') Check
+//     br
+//     br
+//     br
+//     br
+//     #cat
+//       img(src='/images/animals/cat.png')
+//     br
+//     #dancing-cat(style='display: none')
+//       p  Answer: CAT 
+//       img.img-responsive(src='images/dancing/dancing-cats.gif', alt='')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <!DOCTYPE html>
+// <html>
+//   <head></head>
+//   <!-- Sidebar CSS-->
+//   <link href="css/simple-sidebar.css" rel="stylesheet">
+//   <link href="/css/blockgame.css" type="text/css" rel="stylesheet">
+//   <script type="text/javascript" src="/javascripts/blockgame.js"></script>
+//   <title>BlockGame Cat</title>
+// <body>
+//   <div id="wrapper">
+//     <!-- Sidebar-->
+//     <div id="sidebar-wrapper">
+//       <ul class="sidebar-nav">
+//         <li class="sidebar-brand"><a href="/">OVERBOOKED</a></li>
+//         <li><a href="/blockgameCat"><img src="/images/animals/cat.png" alt="" class="img-responsive"></a></li>
+//         <li><a href="/blockgame"><img src="/images/animals/horse.png" alt="" class="img-responsive"></a></li>
+//         <li><a href="#"><img src="/images/animals/raccoon.png" alt="" class="img-responsive"></a></li>
+//       </ul>
+//     </div>
+//     <div id="page-content-wrapper">
+//       <div class="container-fluid">
+//         <div class="row">
+//           <div class="col-lg-12">
+//             <p>Letters:</p>
+//             <div id="letter1" ondrop="drop(event)" ondragover="allowDrop(event)" class="letter"><img id="drag1" src="/images/letters/letter-a-64.ico" draggable="true" ondragstart="drag(event)" width="64" height="64"></div>
+//             <div id="letter2" ondrop="drop(event)" ondragover="allowDrop(event)" class="letter"><img id="drag2" src="/images/letters/letter-c-64.ico" draggable="true" ondragstart="drag(event)" width="64" height="64"></div>
+//             <div id="letter3" ondrop="drop(event)" ondragover="allowDrop(event)" class="letter"><img id="drag3" src="/images/letters/letter-t-64.ico" draggable="true" ondragstart="drag(event)" width="64" height="64"></div>
+//             <div id="letter4" ondrop="drop(event)" ondragover="allowDrop(event)" class="letter"><img id="drag4" src="/images/letters/letter-t-64.ico" draggable="true" ondragstart="drag(event)" width="64" height="64"></div>
+//             <br>
+//             <br>
+//             <br>
+//             <br>
+//             <br>
+//             <p>Answer:</p>
+//             <div id="ans1" ondrop="drop(event)" ondragover="allowDrop(event)" class="answer"></div>
+//             <div id="ans2" ondrop="drop(event)" ondragover="allowDrop(event)" class="answer"></div>
+//             <div id="ans3" ondrop="drop(event)" ondragover="allowDrop(event)" class="answer"></div>
+//             <div id="ans4" ondrop="drop(event)" ondragover="allowDrop(event)" class="answer"></div>
+//             <br>
+//             <br>
+//             <button onclick="correctAnswer()">Check</button><br><br><br><br>
+//             <div id="cat"><img src="/images/animals/bear.png"></div>
+//             <div id="dancing-cat" style="display: none">
+//               <p>Answer: BEAR</p><img src="images/dancing/hopping_bear.gif" alt="" class="img-responsive">
+//               <button onclick="correctAnswer()">Next Game </button>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   </div>
+//   <!-- Scripts-->
+//   <script src="/jquery/jquery.min.js">
+//     <!-- Menu Toggle-->
+//   </script>
+//   <script>
+//     $(document).ready(function() {
+//     $("#wrapper").toggleClass("toggled");
+//     });
+//     $("#menu-toggle").click(function(e) {
+//     e.preventDefault();
+//     $("#wrapper").toggleClass("toggled");
+//     });
+//   </script>
+// </body>
+
