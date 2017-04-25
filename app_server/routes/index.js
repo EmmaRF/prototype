@@ -21,6 +21,7 @@ router.get('/kitchenQuiz', ctrlMain.kitchenQuiz);
 router.get('/easyKitchenQuiz', ctrlMain.easyKitchenQuiz);
 router.get('/mediumKitchenQuiz', ctrlMain.mediumKitchenQuiz);
 router.get('/hardKitchenQuiz', ctrlMain.hardKitchenQuiz);
-// router.get('/templateQuiz', ctrlMain.templateQuiz);
+
+router.get('/profile', ctrlMain.profile);
 
 module.exports = router;
