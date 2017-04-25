@@ -2,64 +2,76 @@ doctype html
 html
   head
   // Sidebar CSS
-  link(href='css/simple-sidebar.css', rel='stylesheet')
+
+  link(href='assets/css/light-bootstrap-dashboard.css', rel='stylesheet')
   link(href='/css/blockgame.css', type='text/css', rel='stylesheet')
   script(type='text/javascript', src='/javascripts/blockgame.js')
   title BlockGame
   body
-    #wrapper
-      // Sidebar
+  
+   nav#mainNav.navbar.navbar-default.navbar-fixed-top.navbar-custom
+      .container-fluid
+        .navbar-header.page-scroll
+          br
+          a.navbar-brand(href='/') Overbooked
+          br
+          | &nbsp;
+    
+    .main-panel
       div
-        a(href='/') OVERBOOKED
         br
         br
         br
-        p Three Letter words
-        a(href='/blockgameCat')
-          img.img-responsive(src='/images/animals/cat.png', alt='')
-        a(href='/blockgame')
-          img.img-responsive(src='/images/animals/bee.png', alt='')
-        a(href='/blockgame')
-          img.img-responsive(src='/images/animals/dog.png', alt='')
-        a(href='/blockgame')
-          img.img-responsive(src='/images/animals/fox.png', alt='')
-        a(href='/blockgame')
-          img.img-responsive(src='/images/animals/owl.png', alt='')
-        a(href='/blockgame')
-          img.img-responsive(src='/images/animals/pig.png', alt='')
-        br
-        br
-        br
-        p Four Letter words
-        a(href='/blockgameBear')
-          img.img-responsive(src='/images/animals/bear.png', alt='')
-        a(href='/blockgame')
-          img.img-responsive(src='/images/animals/deer.png', alt='')
-        a(href='/blockgame')
-          img.img-responsive(src='/images/animals/duck.png', alt='')
-        a(href='/blockgame')
-          img.img-responsive(src='/images/animals/frog.png', alt='')
-        br
-        br
-        br
-        p Five Letter Words
-        a(href='/blockgame')
-          img.img-responsive(src='/images/animals/horse.png', alt='')
-        a(href='/blockgame')
-          img.img-responsive(src='/images/animals/bunny.png', alt='')
-        a(href='/blockgame')
-          img.img-responsive(src='/images/animals/koala.png', alt='')
-        a(href='/blockgame')
-          img.img-responsive(src='/images/animals/sheep.png', alt='')
-        a(href='/blockgame')
-          img.img-responsive(src='/images/animals/sloth.png', alt='')
-        br
-        br
-        br
-        p More Letter Words
-        a(href='/blockgame')
-          img.img-responsive(src='/images/animals/monkey.png', alt='')
-        a(href='/blockgame')
-          img.img-responsive(src='/images/animals/penguin.png', alt='')
-        a(href='/blockgame')
-          img.img-responsive(src='/images/animals/raccoon.png', alt='')
+        div
+          p Three Letter words
+          a(href='/blockgameCat')
+            img.img-responsive(src='/images/animals/cat.png', alt='')
+          a(href='/blockgame')
+            img.img-responsive(src='/images/animals/bee.png', alt='')
+          a(href='/blockgame')
+            img.img-responsive(src='/images/animals/dog.png', alt='')
+          a(href='/blockgame')
+            img.img-responsive(src='/images/animals/fox.png', alt='')
+          a(href='/blockgame')
+            img.img-responsive(src='/images/animals/owl.png', alt='')
+          a(href='/blockgame')
+            img.img-responsive(src='/images/animals/pig.png', alt='')
+          br
+          br
+          br
+        div
+          p Four Letter words
+          a(href='/blockgameBear')
+            img.img-responsive(src='/images/animals/bear.png', alt='')
+          a(href='/blockgame')
+            img.img-responsive(src='/images/animals/deer.png', alt='')
+          a(href='/blockgame')
+            img.img-responsive(src='/images/animals/duck.png', alt='')
+          a(href='/blockgame')
+            img.img-responsive(src='/images/animals/frog.png', alt='')
+          br
+          br
+          br
+        div
+          p Five Letter Words
+          a(href='/blockgame')
+            img.img-responsive(src='/images/animals/horse.png', alt='')
+          a(href='/blockgame')
+            img.img-responsive(src='/images/animals/bunny.png', alt='')
+          a(href='/blockgame')
+            img.img-responsive(src='/images/animals/koala.png', alt='')
+          a(href='/blockgame')
+            img.img-responsive(src='/images/animals/sheep.png', alt='')
+          a(href='/blockgame')
+            img.img-responsive(src='/images/animals/sloth.png', alt='')
+          br
+          br
+          br
+        div
+          p More Letter Words
+          a(href='/blockgame')
+            img.img-responsive(src='/images/animals/monkey.png', alt='')
+          a(href='/blockgame')
+            img.img-responsive(src='/images/animals/penguin.png', alt='')
+          a(href='/blockgame')
+            img.img-responsive(src='/images/animals/raccoon.png', alt='')
