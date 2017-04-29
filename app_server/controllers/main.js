@@ -22,12 +22,76 @@ module.exports.blockgameCat = function(req, res) {
   res.render('blockgameCat', { title: 'Block Game Cat' });
 };
 
+module.exports.blockgameBee = function(req, res) {
+  res.render('blockgameBee', { title: 'Block Game Bee' });
+};
+
+module.exports.blockgameDog = function(req, res) {
+  res.render('blockgameDog', { title: 'Block Game Dog' });
+};
+
+module.exports.blockgameFox = function(req, res) {
+  res.render('blockgameFox', { title: 'Block Game Fox' });
+};
+
+module.exports.blockgameOwl = function(req, res) {
+  res.render('blockgameOwl', { title: 'Block Game Owl' });
+};
+
+module.exports.blockgamePig = function(req, res) {
+  res.render('blockgamePig', { title: 'Block Game Pig' });
+};
+
 module.exports.blockgame = function(req, res) {
   res.render('blockgame', { title: 'Block Game' }); // should change
 };
 
 module.exports.blockgameBear = function(req, res) {
   res.render('blockgameBear', { title: 'Block Game Bear' });
+};
+
+module.exports.blockgameDeer = function(req, res) {
+  res.render('blockgameDeer', { title: 'Block Game Deer' });
+};
+
+module.exports.blockgameDuck = function(req, res) {
+  res.render('blockgameDuck', { title: 'Block Game Duck' });
+};
+
+module.exports.blockgameFrog = function(req, res) {
+  res.render('blockgameFrog', { title: 'Block Game Frog' });
+};
+
+module.exports.blockgameHorse = function(req, res) {
+  res.render('blockgameHorse', { title: 'Block Game Horse' });
+};
+
+module.exports.blockgameBunny = function(req, res) {
+  res.render('blockgameBunny', { title: 'Block Game Bunny' });
+};
+
+module.exports.blockgameKoala = function(req, res) {
+  res.render('blockgameKoala', { title: 'Block Game Koala' });
+};
+
+module.exports.blockgameSheep = function(req, res) {
+  res.render('blockgameSheep', { title: 'Block Game Sheep' });
+};
+
+module.exports.blockgameSloth = function(req, res) {
+  res.render('blockgameSloth', { title: 'Block Game Sloth' });
+};
+
+module.exports.blockgameRaccoon = function(req, res) {
+  res.render('blockgameRaccoon', { title: 'Block Game Raccoon' });
+};
+
+module.exports.blockgameMonkey = function(req, res) {
+  res.render('blockgameMonkey', { title: 'Block Game Monkey' });
+};
+
+module.exports.blockgamePenguin = function(req, res) {
+  res.render('blockgamePenguin', { title: 'Block Game Penguin' });
 };
 
 module.exports.easy = function(req, res) {

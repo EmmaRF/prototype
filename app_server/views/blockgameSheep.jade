@@ -5,7 +5,7 @@ html
   link(href='css/simple-sidebar.css', rel='stylesheet')
   link(href='/css/blockgame.css', type='text/css', rel='stylesheet')
   script(type='text/javascript', src='/javascripts/blockgame.js')
-  title BlockGame Horse
+  title BlockGame Sheep
   body
     #wrapper
       // Sidebar
@@ -35,11 +35,11 @@ html
               #letter1.letter(ondrop='drop(event)', ondragover='allowDrop(event)')
                 img#drag1(src='/images/letters/letter-e-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
               #letter2.letter(ondrop='drop(event)', ondragover='allowDrop(event)')
-                img#drag2(src='/images/letters/letter-h-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
+                img#drag2(src='/images/letters/letter-e-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
               #letter3.letter(ondrop='drop(event)', ondragover='allowDrop(event)')
-                img#drag3(src='/images/letters/letter-o-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
+                img#drag3(src='/images/letters/letter-h-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
               #letter4.letter(ondrop='drop(event)', ondragover='allowDrop(event)')
-                img#drag4(src='/images/letters/letter-r-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
+                img#drag4(src='/images/letters/letter-p-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
               #letter5.letter(ondrop='drop(event)', ondragover='allowDrop(event)')
                 img#drag5(src='/images/letters/letter-s-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
               br
@@ -61,11 +61,11 @@ html
               br
               br
               #cat
-                img(src='/images/animals/horse.png')
+                img(src='/images/animals/sheep.png')
               #dancing-cat(style='display: none')
-                p Answer: HORSE
-                img.img-responsive(src='images/dancing/running-horse.gif', alt='')
-                a(href='/blockgameBunny')
+                p Answer: SHEEP
+                img.img-responsive(src='images/dancing/dancing_sheep.gif', alt='')
+                a(href='/blockgameSloth')
                   button Next Game 
     // Scripts
     script(src='/jquery/jquery.min.js')

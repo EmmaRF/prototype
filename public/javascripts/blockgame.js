@@ -18,7 +18,7 @@ function drop(ev) {
 
 function correctAnswer(){
   var win = document.getElementById("dancing-cat");
-  //show dancing cat;
+  //show dancing animal;
   //say congradulations;
   	if(win.style.display === "block") {
     		win.style.display = 'none';

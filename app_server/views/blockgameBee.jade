@@ -1,18 +1,21 @@
 doctype html
 html
-  head
-  // Sidebar CSS
-  link(href='css/simple-sidebar.css', rel='stylesheet')
-  link(href='/css/blockgame.css', type='text/css', rel='stylesheet')
-  script(type='text/javascript', src='/javascripts/blockgame.js')
-  title BlockGame Horse
+    head
+    // Sidebar CSS
+    link(href='css/simple-sidebar.css', rel='stylesheet')
+    link(href='/css/blockgame.css', type='text/css', rel='stylesheet')
+    script(type='text/javascript', src='/javascripts/blockgame.js')
+    
+    title BlockGame Bee
+  
   body
     #wrapper
       // Sidebar
       #sidebar-wrapper
         ul.sidebar-nav
           li.sidebar-brand
-            a(href='/') OVERBOOKED
+            a(href='/')
+              | OVERBOOKED
           li
             a(href='/blockgameCat')
               img.img-responsive(src='/images/animals/cat.png', alt='')
@@ -25,23 +28,22 @@ html
           li
             a(href='/blockgameRaccoon')
               img.img-responsive(src='/images/animals/raccoon.png', alt='')
+
       #page-content-wrapper
         .container-fluid
           .row
             .col-lg-12
               a#menu-toggle.btn.btn-default(href='#menu-toggle') 
                 button Toggle Menu
+              br
+              br
               p Letters:
               #letter1.letter(ondrop='drop(event)', ondragover='allowDrop(event)')
                 img#drag1(src='/images/letters/letter-e-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
               #letter2.letter(ondrop='drop(event)', ondragover='allowDrop(event)')
-                img#drag2(src='/images/letters/letter-h-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
+                img#drag2(src='/images/letters/letter-e-64-2.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
               #letter3.letter(ondrop='drop(event)', ondragover='allowDrop(event)')
-                img#drag3(src='/images/letters/letter-o-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
-              #letter4.letter(ondrop='drop(event)', ondragover='allowDrop(event)')
-                img#drag4(src='/images/letters/letter-r-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
-              #letter5.letter(ondrop='drop(event)', ondragover='allowDrop(event)')
-                img#drag5(src='/images/letters/letter-s-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
+                img#drag3(src='/images/letters/letter-b-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
               br
               br
               br
@@ -51,25 +53,28 @@ html
               #ans1.answer(ondrop='drop(event)', ondragover='allowDrop(event)')
               #ans2.answer(ondrop='drop(event)', ondragover='allowDrop(event)')
               #ans3.answer(ondrop='drop(event)', ondragover='allowDrop(event)')
-              #ans4.answer(ondrop='drop(event)', ondragover='allowDrop(event)')
-              #ans5.answer(ondrop='drop(event)', ondragover='allowDrop(event)')
               br
               br
               button(onclick='correctAnswer()') Check
               br
+              
               br
               br
               br
               #cat
-                img(src='/images/animals/horse.png')
+                img(src='/images/animals/bee.png')
               #dancing-cat(style='display: none')
-                p Answer: HORSE
-                img.img-responsive(src='images/dancing/running-horse.gif', alt='')
-                a(href='/blockgameBunny')
+                p Answer: BEE
+                img.img-responsive(src='images/dancing/happy_bee.gif', alt='')
+                a(href='/blockgameDog')
                   button Next Game 
+
     // Scripts
+   
     script(src='/jquery/jquery.min.js')
-      <!-- Menu Toggle-->
+    
+      // Menu Toggle
+    
     script.
       $(document).ready(function() {
       $("#wrapper").toggleClass("toggled");

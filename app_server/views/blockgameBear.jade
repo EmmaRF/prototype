@@ -5,7 +5,7 @@ html
   link(href='css/simple-sidebar.css', rel='stylesheet')
   link(href='/css/blockgame.css', type='text/css', rel='stylesheet')
   script(type='text/javascript', src='/javascripts/blockgame.js')
-  title BlockGame Cat
+  title BlockGame Bear
   body
     #wrapper
       // Sidebar
@@ -17,10 +17,13 @@ html
             a(href='/blockgameCat')
               img.img-responsive(src='/images/animals/cat.png', alt='')
           li
-            a(href='/blockgame')
+            a(href='/blockgameBear')
+              img.img-responsive(src='/images/animals/bear.png', alt='')
+          li
+            a(href='/blockgameHorse')
               img.img-responsive(src='/images/animals/horse.png', alt='')
           li
-            a(href='#')
+            a(href='/blockgameRaccoon')
               img.img-responsive(src='/images/animals/raccoon.png', alt='')
       #page-content-wrapper
         .container-fluid
@@ -32,11 +35,11 @@ html
               #letter1.letter(ondrop='drop(event)', ondragover='allowDrop(event)')
                 img#drag1(src='/images/letters/letter-a-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
               #letter2.letter(ondrop='drop(event)', ondragover='allowDrop(event)')
-                img#drag2(src='/images/letters/letter-c-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
+                img#drag2(src='/images/letters/letter-b-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
               #letter3.letter(ondrop='drop(event)', ondragover='allowDrop(event)')
-                img#drag3(src='/images/letters/letter-t-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
+                img#drag3(src='/images/letters/letter-e-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
               #letter4.letter(ondrop='drop(event)', ondragover='allowDrop(event)')
-                img#drag4(src='/images/letters/letter-t-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
+                img#drag4(src='/images/letters/letter-r-64.ico', draggable='true', ondragstart='drag(event)', width='64', height='64')
               br
               br
               br
@@ -59,7 +62,8 @@ html
               #dancing-cat(style='display: none')
                 p Answer: BEAR
                 img.img-responsive(src='images/dancing/hopping_bear.gif', alt='')
-                button(onclick='correctAnswer()') Next Game 
+                a(href='/blockgameDeer')
+                  button Next Game  
     // Scripts
     script(src='/jquery/jquery.min.js')
       <!-- Menu Toggle-->
